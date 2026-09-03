@@ -1,0 +1,715 @@
+/* ===========================================================
+   RESPONSIVE.CSS
+   Premium Portfolio Website
+   Part 1
+   Large Desktop • Laptop
+   =========================================================== */
+
+
+/* ===========================================================
+   LARGE DESKTOP
+   1600px+
+   =========================================================== */
+
+@media (min-width:1600px){
+
+    .container{
+
+        max-width:1500px;
+
+    }
+
+    .hero-content{
+
+        gap:100px;
+
+    }
+
+    .hero-title{
+
+        font-size:5rem;
+
+    }
+
+    .section{
+
+        padding:150px 0;
+
+    }
+
+}
+
+
+/* ===========================================================
+   DESKTOP
+   1400px - 1599px
+   =========================================================== */
+
+@media (max-width:1599px){
+
+    .container{
+
+        max-width:1320px;
+
+    }
+
+}
+
+
+/* ===========================================================
+   LARGE LAPTOP
+   1200px - 1399px
+   =========================================================== */
+
+@media (max-width:1399px){
+
+    .container{
+
+        max-width:1140px;
+
+    }
+
+    .hero-content{
+
+        gap:70px;
+
+    }
+
+    .hero-title{
+
+        font-size:4rem;
+
+    }
+
+    .hero-description{
+
+        max-width:560px;
+
+    }
+
+}
+
+
+/* ===========================================================
+   LAPTOP
+   1200px
+   =========================================================== */
+
+@media (max-width:1200px){
+
+    .container{
+
+        width:92%;
+
+    }
+
+    .hero{
+
+        min-height:100vh;
+
+    }
+
+    .hero-content{
+
+        gap:60px;
+
+    }
+
+    .hero-title{
+
+        font-size:3.6rem;
+
+    }
+
+    .hero-image{
+
+        max-width:420px;
+
+    }
+
+    .projects-grid{
+
+        grid-template-columns:
+
+            repeat(2,1fr);
+
+    }
+
+    .skills-grid{
+
+        grid-template-columns:
+
+            repeat(2,1fr);
+
+    }
+
+}
+
+
+/* ===========================================================
+   END OF PART 1
+   =========================================================== */
+
+
+/* ===========================================================
+   RESPONSIVE.CSS
+   Part 2
+   Tablet Responsive
+   =========================================================== */
+
+
+/* ===========================================================
+   TABLET
+   992px
+   =========================================================== */
+
+@media (max-width:992px){
+
+    /* ---------- Container ---------- */
+
+    .container{
+
+        width:94%;
+
+    }
+
+
+    /* ---------- Navbar ---------- */
+
+    .nav-links{
+
+        display:none;
+
+    }
+
+    .mobile-menu-btn{
+
+        display:flex;
+
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .hero{
+
+        padding-top:120px;
+
+        min-height:auto;
+
+    }
+
+    .hero-content{
+
+        display:flex;
+
+        flex-direction:column-reverse;
+
+        align-items:center;
+
+        text-align:center;
+
+        gap:60px;
+
+    }
+
+    .hero-text{
+
+        align-items:center;
+
+    }
+
+    .hero-description{
+
+        max-width:650px;
+
+        margin:0 auto;
+
+    }
+
+
+    /* ---------- Hero Buttons ---------- */
+
+    .hero-buttons{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+
+    /* ---------- Hero Image ---------- */
+
+    .hero-image{
+
+        max-width:380px;
+
+        width:100%;
+
+    }
+
+
+    /* ---------- Section ---------- */
+
+    .section{
+
+        padding:90px 0;
+
+    }
+
+
+    /* ---------- Footer ---------- */
+
+    .footer-content{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:50px;
+
+    }
+
+    .footer-brand p{
+
+        margin:0 auto;
+
+    }
+
+    .social-icons{
+
+        justify-content:center;
+
+    }
+
+}
+
+
+/* ===========================================================
+   TABLET
+   768px
+   =========================================================== */
+
+@media (max-width:768px){
+
+    .hero-title{
+
+        font-size:3rem;
+
+    }
+
+    .hero-subtitle{
+
+        font-size:1.15rem;
+
+    }
+
+    .hero-description{
+
+        font-size:1rem;
+
+    }
+
+    .hero-buttons{
+
+        gap:18px;
+
+    }
+
+    .hero-image{
+
+        max-width:320px;
+
+    }
+
+}
+
+
+/* ===========================================================
+   RESPONSIVE.CSS
+   Part 3
+   Mobile Devices
+   =========================================================== */
+
+
+/* ===========================================================
+   MOBILE
+   576px - 767px
+   =========================================================== */
+
+@media (max-width:576px){
+
+    /* ---------- Container ---------- */
+
+    .container{
+
+        width:92%;
+
+    }
+
+
+    /* ---------- Section ---------- */
+
+    .section{
+
+        padding:80px 0;
+
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .hero{
+
+        padding-top:110px;
+
+    }
+
+    .hero-content{
+
+        gap:45px;
+
+    }
+
+    .hero-title{
+
+        font-size:2.5rem;
+
+        line-height:1.2;
+
+    }
+
+    .hero-subtitle{
+
+        font-size:1.05rem;
+
+    }
+
+    .hero-description{
+
+        font-size:0.95rem;
+
+        line-height:1.8;
+
+    }
+
+
+    /* ---------- Hero Buttons ---------- */
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        width:100%;
+
+        gap:16px;
+
+    }
+
+    .hero-buttons .btn{
+
+        width:100%;
+
+        max-width:320px;
+
+        justify-content:center;
+
+    }
+
+
+    /* ---------- Hero Image ---------- */
+
+    .hero-image{
+
+        width:100%;
+
+        max-width:280px;
+
+    }
+
+
+    /* ---------- Typography ---------- */
+
+    h2{
+
+        font-size:2rem;
+
+    }
+
+    h3{
+
+        font-size:1.4rem;
+
+    }
+
+
+    /* ---------- Cards ---------- */
+
+    .projects-grid,
+
+    .skills-grid{
+
+        grid-template-columns:1fr;
+
+        gap:24px;
+
+    }
+
+
+    /* ---------- Footer ---------- */
+
+    .footer{
+
+        padding:70px 0 30px;
+
+    }
+
+    .footer-content{
+
+        gap:40px;
+
+    }
+
+    .footer-brand h3{
+
+        font-size:1.7rem;
+
+    }
+
+    .footer-links ul{
+
+        gap:14px;
+
+    }
+
+    .social-icons{
+
+        gap:14px;
+
+    }
+
+    .social-icons a{
+
+        width:46px;
+
+        height:46px;
+
+    }
+
+}
+
+
+
+/* ===========================================================
+   RESPONSIVE.CSS
+   Part 4
+   Small Mobile • Landscape • Final Responsive Polish
+   =========================================================== */
+
+
+/* ===========================================================
+   SMALL MOBILE
+   420px
+   =========================================================== */
+
+@media (max-width:420px){
+
+    /* ---------- Container ---------- */
+
+    .container{
+
+        width:90%;
+
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .hero{
+
+        padding-top:100px;
+
+    }
+
+    .hero-content{
+
+        gap:35px;
+
+    }
+
+    .hero-title{
+
+        font-size:2.1rem;
+
+    }
+
+    .hero-subtitle{
+
+        font-size:1rem;
+
+    }
+
+    .hero-description{
+
+        font-size:.9rem;
+
+    }
+
+
+    /* ---------- Hero Buttons ---------- */
+
+    .hero-buttons{
+
+        gap:14px;
+
+    }
+
+    .hero-buttons .btn{
+
+        width:100%;
+
+        max-width:100%;
+
+        padding:14px 20px;
+
+    }
+
+
+    /* ---------- Hero Image ---------- */
+
+    .hero-image{
+
+        max-width:240px;
+
+    }
+
+
+    /* ---------- Headings ---------- */
+
+    h2{
+
+        font-size:1.8rem;
+
+    }
+
+    h3{
+
+        font-size:1.25rem;
+
+    }
+
+
+    /* ---------- Footer ---------- */
+
+    .footer-brand h3{
+
+        font-size:1.5rem;
+
+    }
+
+    .footer-bottom p{
+
+        font-size:.85rem;
+
+    }
+
+}
+
+
+/* ===========================================================
+   LANDSCAPE MOBILE
+   =========================================================== */
+
+@media (max-height:600px) and (orientation:landscape){
+
+    .hero{
+
+        min-height:auto;
+
+        padding:120px 0 80px;
+
+    }
+
+}
+
+
+/* ===========================================================
+   LARGE DESKTOP
+   1920px+
+   =========================================================== */
+
+@media (min-width:1920px){
+
+    .container{
+
+        max-width:1600px;
+
+    }
+
+}
+
+
+/* ===========================================================
+   IMAGE RESPONSIVE
+   =========================================================== */
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+
+/* ===========================================================
+   OVERFLOW PROTECTION
+   =========================================================== */
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+
+/* ===========================================================
+   RESPONSIVE UTILITIES
+   =========================================================== */
+
+.hide-mobile{
+
+    display:block;
+
+}
+
+.show-mobile{
+
+    display:none;
+
+}
+
+
+@media (max-width:768px){
+
+    .hide-mobile{
+
+        display:none !important;
+
+    }
+
+    .show-mobile{
+
+        display:block !important;
+
+    }
+
+}
+
+
+/* ===========================================================
+   END OF RESPONSIVE.CSS
+   =========================================================== */

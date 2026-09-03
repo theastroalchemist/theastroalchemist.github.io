@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-[#0b0306]">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Pratik Kanpurwar - Vedic Astrology</title>
+    <meta name="description"
+        content="Get in touch with Pratik Kanpurwar for Vedic Astrology consultations, Kundli analysis, gemstones, remedies, and courses.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Cinzel (Headings) + Outfit (Body Text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        html,
+        body {
+            background-color: #0b0306 !important;
+            color: #e1c78e;
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .font-serif-cinzel {
+            font-family: 'Cinzel', serif;
+        }
+
+        /* Cosmic Deep Burgundy Background Gradient */
+        .cosmic-burgundy-bg {
+            background: radial-gradient(circle at 50% 0%, #2d0816 0%, #16040a 60%, #0b0306 100%) !important;
+            background-attachment: fixed !important;
+        }
+
+        /* Warm Faint Gold Palette */
+        .text-gold-bright {
+            color: #f4e6b0;
+        }
+
+        .text-gold-faint {
+            color: #e1c78e;
+        }
+
+        .text-gold-muted {
+            color: #bfa56f;
+        }
+
+        .border-gold-faint {
+            border-color: rgba(225, 199, 142, 0.22);
+        }
+
+        .bg-wine-dark {
+            background-color: #18060f;
+        }
+
+        /* Headline Mouse Hover Glow Effect */
+        .glow-headline {
+            transition: text-shadow 0.4s ease-in-out, color 0.4s ease-in-out, transform 0.4s ease-in-out;
+            cursor: default;
+        }
+
+        .glow-headline:hover {
+            color: #ffffff !important;
+            text-shadow: 0 0 15px rgba(244, 230, 176, 0.9),
+                0 0 30px rgba(212, 175, 55, 0.75),
+                0 0 50px rgba(212, 175, 55, 0.5),
+                0 0 70px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Glassmorphic Card with Smooth Hover Lift Effect */
+        .glass-card-wine {
+            background: rgba(24, 6, 15, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(225, 199, 142, 0.2);
+            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+            will-change: transform;
+        }
+
+        .glass-card-wine:hover {
+            transform: translateY(-8px);
+            border-color: rgba(244, 230, 176, 0.6);
+            box-shadow: 0 15px 35px -5px rgba(212, 175, 55, 0.25), 0 0 15px rgba(212, 175, 55, 0.15);
+        }
+
+        /* Form Inputs */
+        .input-wine {
+            background-color: rgba(12, 3, 7, 0.85) !important;
+            border: 1px solid rgba(225, 199, 142, 0.25);
+            color: #f4e6b0 !important;
+        }
+
+        .input-wine:focus {
+            outline: none;
+            border-color: #e1c78e;
+            box-shadow: 0 0 15px rgba(225, 199, 142, 0.35);
+        }
+
+        /* Cosmic Background Pattern */
+        .star-pattern {
+            background-image: radial-gradient(rgba(225, 199, 142, 0.12) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0b0306;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #2d0816;
+            border-radius: 4px;
+            border: 1px solid rgba(225, 199, 142, 0.2);
+        }
+
+        /* AstroBot Floating & Glowing Animation */
+        @keyframes botFloat {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        @keyframes botGlow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 15px rgba(212, 175, 55, 0.4), 0 0 25px rgba(212, 175, 55, 0.2);
+            }
+
+            50% {
+                box-shadow: 0 0 25px rgba(244, 230, 176, 0.8), 0 0 40px rgba(212, 175, 55, 0.5);
+            }
+        }
+
+        .animate-bot-float {
+            animation: botFloat 3s ease-in-out infinite;
+        }
+
+        .animate-bot-glow {
+            animation: botGlow 2.5s infinite alternate;
+        }
+    </style>
+</head>
+
+<body class="star-pattern cosmic-burgundy-bg min-h-screen flex flex-col justify-between">
+
+    <!-- ================= 1. NAVIGATION BAR ================= -->
+    <nav
+        class="fixed top-0 left-0 w-full z-50 bg-[#0b0306]/95 backdrop-blur-md border-b border-gold-faint px-4 sm:px-8 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+
+            <!-- Logo -->
+            <a href="index.html"
+                class="font-serif-cinzel text-lg sm:text-2xl font-bold tracking-widest text-gold-bright flex items-center gap-2">
+                <span class="text-amber-300 text-xl">✦</span> The Astro Alchemist
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden lg:flex items-center space-x-2.5 text-xs xl:text-sm font-medium">
+                <a href="index.html"
+                    class="px-4 py-2 rounded-xl bg-[#13040a]/60 border border-gold-faint/20 text-gold-muted hover:text-gold-bright hover:border-gold-bright/50 hover:bg-[#230814] hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] transition-all duration-300">
+                    Home
+                </a>
+
+                <a href="courses.html"
+                    class="px-4 py-2 rounded-xl bg-[#13040a]/60 border border-gold-faint/20 text-gold-muted hover:text-gold-bright hover:border-gold-bright/50 hover:bg-[#230814] hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] transition-all duration-300">
+                    Astrology Courses
+                </a>
+
+                <a href="gems.html"
+                    class="px-4 py-2 rounded-xl bg-[#13040a]/60 border border-gold-faint/20 text-gold-muted hover:text-gold-bright hover:border-gold-bright/50 hover:bg-[#230814] hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] transition-all duration-300">
+                    Gems
+                </a>
+
+                <a href="faqs.html"
+                    class="px-4 py-2 rounded-xl bg-[#13040a]/60 border border-gold-faint/20 text-gold-muted hover:text-gold-bright hover:border-gold-bright/50 hover:bg-[#230814] hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] transition-all duration-300">
+                    FAQs
+                </a>
+
+                <!-- Active Page Card (Contact Us) -->
+                <a href="contact.html"
+                    class="px-4 py-2 rounded-xl bg-gradient-to-r from-[#2d0a18] to-[#1c050f] border border-gold-bright/70 text-gold-bright font-semibold shadow-[0_0_12px_rgba(212,175,55,0.3)] -translate-y-0.5 transition-all duration-300">
+                    Contact Us
+                </a>
+
+                <a href="astrobot.html"
+                    class="px-4 py-2 rounded-xl bg-[#13040a]/60 border border-gold-faint/20 text-gold-muted hover:text-gold-bright hover:border-gold-bright/50 hover:bg-[#230814] hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] transition-all duration-300">
+                    AstroBot
+                </a>
+            </div>
+
+            <!-- Desktop CTA -->
+            <a href="index.html#consult"
+                class="hidden sm:inline-flex border border-gold-faint bg-[#2d0816]/80 text-gold-bright hover:bg-gradient-to-r hover:from-[#d4af37] hover:to-[#aa7c11] hover:text-slate-950 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition duration-300 shadow-md">
+                Book Consultation
+            </a>
+
+            <!-- Mobile Hamburger Menu Button -->
+            <button id="menuBtn" class="lg:hidden text-gold-bright text-2xl focus:outline-none p-1"
+                aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu"
+            class="hidden lg:hidden flex-col bg-[#16040a] border-b border-gold-faint px-6 py-6 space-y-4 mt-3 rounded-b-2xl shadow-2xl">
+            <a href="index.html" class="text-gold-muted hover:text-gold-bright text-sm block">Home</a>
+            <a href="courses.html" class="text-gold-muted hover:text-gold-bright text-sm block">Astrology Courses</a>
+            <a href="gems.html" class="text-gold-muted hover:text-gold-bright text-sm block">Gems</a>
+            <a href="faqs.html" class="text-gold-muted hover:text-gold-bright text-sm block">FAQs</a>
+            <a href="contact.html" class="text-gold-bright font-semibold text-sm block">Contact Us</a>
+            <a href="astrobot.html" class="text-gold-muted hover:text-gold-bright text-sm block">AstroBot</a>
+            <a href="index.html#consult"
+                class="block text-center border border-gold-faint bg-[#2d0816] text-gold-bright py-3 rounded-xl text-xs font-bold uppercase tracking-wider">
+                Book Private Consultation
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- ================= 2. HERO SECTION ================= -->
+    <section class="pt-32 sm:pt-40 pb-12 px-4 sm:px-6 max-w-4xl mx-auto text-center flex flex-col items-center">
+        <div
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold-faint bg-[#1d050f]/80 mb-6 text-xs text-gold-faint tracking-widest uppercase">
+            <span class="text-amber-300">✦</span> We Are Here To Guide You
+        </div>
+
+        <h1
+            class="font-serif-cinzel glow-headline text-3xl sm:text-5xl font-bold text-gold-bright tracking-wide leading-tight mb-4">
+            Connect With Astro Pratik
+        </h1>
+
+        <p class="text-gold-muted text-sm sm:text-base font-light leading-relaxed max-w-2xl">
+            Have questions regarding consultation bookings, Kundli remedies, or joining our Vedic Astrology courses?
+            Reach out to us through any of the channels below.
+        </p>
+    </section>
+
+    <div class="text-center text-gold-muted text-xs tracking-widest my-2">✦ ✦ ✦</div>
+
+
+    <!-- ================= 3. DIRECT CONTACT & FORM SECTION ================= -->
+    <section class="py-12 px-4 sm:px-8 max-w-7xl mx-auto w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+            <!-- Left 5 Columns: Direct Contact Cards -->
+            <div class="lg:col-span-5 space-y-5">
+
+                <!-- WhatsApp Card -->
+                <a href="https://wa.me/918262071166?text=Hello%20Pratik%20sir,%20I%20would%20like%20to%20connect%20with%20you."
+                    target="_blank" class="glass-card-wine p-6 rounded-2xl flex items-center gap-5 group block">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-[#25D366]/10 border border-[#25D366]/30 flex items-center justify-center text-[#25D366] text-2xl group-hover:scale-110 transition duration-300">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div>
+                        <span class="text-[11px] uppercase tracking-wider text-gold-muted block">Instant Chat</span>
+                        <h3
+                            class="font-serif-cinzel text-lg font-bold text-gold-bright group-hover:text-amber-300 transition">
+                            WhatsApp Support</h3>
+                        <p class="text-xs text-gold-faint mt-0.5">+91 8262071166 / +91 8208037091</p>
+                    </div>
+                </a>
+
+                <!-- Mobile Call Card -->
+                <a href="tel:+918262071166" class="glass-card-wine p-6 rounded-2xl flex items-center gap-5 group block">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-amber-400/10 border border-amber-400/30 flex items-center justify-center text-amber-400 text-xl group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <span class="text-[11px] uppercase tracking-wider text-gold-muted block">Direct Helpline</span>
+                        <h3
+                            class="font-serif-cinzel text-lg font-bold text-gold-bright group-hover:text-amber-300 transition">
+                            Phone Call</h3>
+                        <p class="text-xs text-gold-faint mt-0.5">+91 8262071166</p>
+                    </div>
+                </a>
+
+                <!-- Email Card -->
+                <a href="mailto:consult.pratikkanpurwar@gmail.com"
+                    class="glass-card-wine p-6 rounded-2xl flex items-center gap-5 group block">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-amber-400/10 border border-amber-400/30 flex items-center justify-center text-amber-400 text-xl group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <span class="text-[11px] uppercase tracking-wider text-gold-muted block">Official Mail</span>
+                        <h3
+                            class="font-serif-cinzel text-lg font-bold text-gold-bright group-hover:text-amber-300 transition">
+                            Email Us</h3>
+                        <p class="text-xs text-gold-faint mt-0.5">consult.pratikkanpurwar@gmail.com</p>
+                    </div>
+                </a>
+
+                <!-- Location & Timing Card -->
+                <div class="glass-card-wine p-6 rounded-2xl flex items-center gap-5">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-amber-400/10 border border-amber-400/30 flex items-center justify-center text-amber-400 text-xl">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <span class="text-[11px] uppercase tracking-wider text-gold-muted block">Location & Hours</span>
+                        <h3 class="font-serif-cinzel text-lg font-bold text-gold-bright">Pune, Maharashtra, India</h3>
+                        <p class="text-xs text-gold-faint mt-0.5">Mon - Sat: 10:00 AM - 7:00 PM IST</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right 7 Columns: Interactive Message Form Card -->
+            <div class="lg:col-span-7 glass-card-wine p-6 sm:p-8 rounded-3xl border border-gold-faint">
+                <h2 class="font-serif-cinzel text-xl sm:text-2xl font-bold text-gold-bright mb-2">
+                    Send Us A Direct Message
+                </h2>
+                <p class="text-gold-muted text-xs sm:text-sm mb-6">
+                    Fill in your details below. Clicking submit will open your message directly on WhatsApp for an
+                    immediate response.
+                </p>
+
+                <form id="contactForm" onsubmit="sendToWhatsApp(event)" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs text-gold-muted uppercase tracking-wider mb-2">Full Name
+                                *</label>
+                            <input type="text" id="contactName" required placeholder="e.g. Rajesh Sharma"
+                                class="w-full input-wine rounded-xl px-4 py-3 text-xs sm:text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs text-gold-muted uppercase tracking-wider mb-2">Phone / WhatsApp
+                                Number *</label>
+                            <input type="tel" id="contactPhone" required placeholder="+91 9876543210"
+                                class="w-full input-wine rounded-xl px-4 py-3 text-xs sm:text-sm">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs text-gold-muted uppercase tracking-wider mb-2">Email
+                                Address</label>
+                            <input type="email" id="contactEmail" placeholder="youremail@gmail.com"
+                                class="w-full input-wine rounded-xl px-4 py-3 text-xs sm:text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs text-gold-muted uppercase tracking-wider mb-2">Query
+                                Purpose</label>
+                            <select id="contactPurpose"
+                                class="w-full input-wine rounded-xl px-4 py-3 text-xs sm:text-sm bg-[#0c0307]">
+                                <option value="Kundli Consultation">Kundli Consultation</option>
+                                <option value="Gemstone & Remedies">Gemstones & Remedies</option>
+                                <option value="Astrology Course Inquiry">Astrology Course Inquiry</option>
+                                <option value="Career/Business Guidance">Career / Business Guidance</option>
+                                <option value="Other Question">Other Question</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs text-gold-muted uppercase tracking-wider mb-2">Your Message / Query
+                            *</label>
+                        <textarea id="contactMessage" rows="4" required
+                            placeholder="Write your question or birth details here..."
+                            class="w-full input-wine rounded-xl p-4 text-xs sm:text-sm"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-gradient-to-r from-[#d4af37] via-[#c5a059] to-[#aa7c11] text-slate-950 font-bold py-3.5 rounded-xl text-xs sm:text-sm uppercase tracking-wider hover:opacity-90 transition shadow-lg flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-base"></i> Send Message On WhatsApp
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= 4. ALL SOCIAL PROFILES SECTION ================= -->
+    <!-- ================= 4. ALL SOCIAL PROFILES SECTION ================= -->
+    <section class="py-12 px-4 sm:px-8 max-w-7xl mx-auto w-full">
+        <div class="text-center mb-10">
+            <h2
+                class="font-serif-cinzel glow-headline text-2xl sm:text-3xl font-bold text-gold-bright tracking-wide mb-3">
+                Follow Astro Pratik Across Platforms
+            </h2>
+            <p class="text-gold-muted text-xs sm:text-sm max-w-xl mx-auto">
+                Stay connected for daily astrological horoscopes, planetary transit updates, Vedic wisdom shorts, and
+                live Q&A sessions.
+            </p>
+        </div>
+
+        <!-- Centered Grid Container (Updated lg:grid-cols-6 & max-w-5xl) -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 max-w-5xl mx-auto justify-center">
+
+            <!-- 1. WhatsApp -->
+            <a href="https://wa.me/918262071166" target="_blank" rel="noopener noreferrer"
+                class="glass-card-wine p-4 rounded-2xl text-center flex flex-col items-center justify-center gap-2 group">
+                <div
+                    class="w-10 h-10 rounded-full bg-[#25D366]/20 border border-[#25D366]/40 flex items-center justify-center text-[#25D366] text-xl group-hover:scale-110 transition duration-300">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <span class="text-xs font-semibold text-gold-bright">WhatsApp</span>
+            </a>
+
+            <!-- 2. Mobile Call -->
+            <a href="tel:+918262071166"
+                class="glass-card-wine p-4 rounded-2xl text-center flex flex-col items-center justify-center gap-2 group">
+                <div
+                    class="w-10 h-10 rounded-full bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-400 text-lg group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <span class="text-xs font-semibold text-gold-bright">Mobile</span>
+            </a>
+
+            <!-- 3. Email -->
+            <a href="mailto:consult.pratikkanpurwar@gmail.com"
+                class="glass-card-wine p-4 rounded-2xl text-center flex flex-col items-center justify-center gap-2 group">
+                <div
+                    class="w-10 h-10 rounded-full bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-400 text-lg group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <span class="text-xs font-semibold text-gold-bright">Email</span>
+            </a>
+
+            <!-- 4. YouTube -->
+            <a href="https://youtube.com/@pratikkanpurwar4057?si=vgxUoqk-8dP_anSP" target="_blank"
+                rel="noopener noreferrer"
+                class="glass-card-wine p-4 rounded-2xl text-center flex flex-col items-center justify-center gap-2 group">
+                <div
+                    class="w-10 h-10 rounded-full bg-[#FF0000]/20 border border-[#FF0000]/40 flex items-center justify-center text-[#FF0000] text-xl group-hover:scale-110 transition duration-300">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <span class="text-xs font-semibold text-gold-bright">YouTube</span>
+            </a>
+
+            <!-- 5. Instagram -->
+            <a href="https://www.instagram.com/the.astroalchemist?utm_source=qr&igsh=MWl6d2F3aGV3MzF3MA==&igsi=MWl6d2F3aGV3MzF3MA=="
+                target="_blank" rel="noopener noreferrer"
+                class="glass-card-wine p-4 rounded-2xl text-center flex flex-col items-center justify-center gap-2 group">
+                <div
+                    class="w-10 h-10 rounded-full bg-[#E1306C]/20 border border-[#E1306C]/40 flex items-center justify-center text-[#E1306C] text-xl group-hover:scale-110 transition duration-300">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <span class="text-xs font-semibold text-gold-bright">Instagram</span>
+            </a>
+
+            <!-- 6. Threads -->
+            <a href="https://www.threads.com/@the.astroalchemist" target="_blank" rel="noopener noreferrer"
+                class="glass-card-wine p-4 rounded-2xl text-center flex flex-col items-center justify-center gap-2 group">
+                <div
+                    class="w-10 h-10 rounded-full bg-amber-200/20 border border-amber-200/40 flex items-center justify-center text-amber-200 text-lg group-hover:scale-110 transition duration-300">
+                    <i class="fa-brands fa-threads"></i>
+                </div>
+                <span class="text-xs font-semibold text-gold-bright">Threads</span>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ================= 5. PREMIUM FOOTER ================= -->
+    <footer class="bg-[#080204] border-t border-gold-faint pt-12 pb-8 px-4 sm:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+
+            <!-- Col 1: About -->
+            <div class="space-y-3">
+                <a href="index.html"
+                    class="font-serif-cinzel text-lg font-bold text-gold-bright flex items-center gap-2">
+                    <span class="text-amber-300">✦</span> PRATIK KANPURWAR
+                </a>
+                <p class="text-gold-muted text-xs leading-relaxed">
+                    Vedic Astrology, Horoscope Analysis, and Sacred Life Guidance. Standing beside you as a true
+                    well-wisher on life's journey.
+                </p>
+                <div class="text-amber-300/80 text-xs italic font-bold pt-1">
+                    "लोकाः समस्ताः सुखिनो भवन्तु"
+                </div>
+            </div>
+
+            <!-- Col 2: Site Navigation -->
+            <div>
+                <h4 class="font-serif-cinzel text-gold-bright font-bold text-sm mb-3 uppercase tracking-wider">Quick
+                    Links</h4>
+                <ul class="space-y-2 text-xs text-gold-muted">
+                    <li><a href="index.html" class="hover:text-gold-bright transition">Home Page</a></li>
+                    <li><a href="courses.html" class="hover:text-gold-bright transition">Astrology Courses</a></li>
+                    <li><a href="gems.html" class="hover:text-gold-bright transition">Gems</a></li>
+                    <li><a href="faqs.html" class="hover:text-gold-bright transition">Frequently Asked Questions</a>
+                    </li>
+                    <li><a href="contact.html" class="hover:text-gold-bright transition">Contact Us</a></li>
+                    <li><a href="astrobot.html" class="hover:text-gold-bright transition">AstroBot</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Key Offerings -->
+            <div>
+                <h4 class="font-serif-cinzel text-gold-bright font-bold text-sm mb-3 uppercase tracking-wider">Our
+                    Services</h4>
+                <ul class="space-y-2 text-xs text-gold-muted">
+                    <li><a href="index.html#consult" class="hover:text-gold-bright transition">Full Kundli Analysis</a>
+                    </li>
+                    <li><a href="index.html#consult" class="hover:text-gold-bright transition">Career & Business
+                            Guidance</a></li>
+                    <li><a href="index.html#consult" class="hover:text-gold-bright transition">Marriage &
+                            Matchmaking</a></li>
+                    <li><a href="index.html#consult" class="hover:text-gold-bright transition">Cesarean Birth Muhurt</a>
+                    </li>
+                    <li><a href="gems.html" class="hover:text-gold-bright transition">Vastu & Gemstones</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Reach Out & Social Links -->
+            <div class="space-y-3">
+                <h4 class="font-serif-cinzel text-gold-bright font-bold text-sm mb-3 uppercase tracking-wider">Get in
+                    Touch</h4>
+                <p class="text-gold-muted text-xs flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-amber-400"></i> +91 8262071166 / 8208037091
+                </p>
+                <p class="text-gold-muted text-xs flex items-center gap-2">
+                    <i class="fa-solid fa-envelope text-amber-400"></i> Email: consult.pratikkanpurwar@gmail.com
+                </p>
+                <p class="text-gold-muted text-xs flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-amber-400"></i> Pune, Maharashtra, India
+                </p>
+
+                <!-- Social Media Links -->
+                <div class="pt-2 flex gap-2.5 text-gold-bright flex-wrap">
+                    <a href="https://wa.me/918262071166" target="_blank" rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-[#18060f] border border-gold-faint flex items-center justify-center text-xs hover:bg-[#2d0816]"
+                        aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://youtube.com/@pratikkanpurwar4057?si=vgxUoqk-8dP_anSP" target="_blank"
+                        rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-[#18060f] border border-gold-faint flex items-center justify-center text-xs hover:bg-[#2d0816]"
+                        aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/the.astroalchemist?utm_source=qr&igsh=MWl6d2F3aGV3MzF3MA==&igsi=MWl6d2F3aGV3MzF3MA=="
+                        target="_blank" rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-[#18060f] border border-gold-faint flex items-center justify-center text-xs hover:bg-[#2d0816]"
+                        aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.threads.com/@the.astroalchemist" target="_blank" rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-[#18060f] border border-gold-faint flex items-center justify-center text-xs hover:bg-[#2d0816]"
+                        aria-label="Threads">
+                        <i class="fa-brands fa-threads"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto border-t border-gold-faint/30 pt-6 flex justify-center items-center text-[11px] text-gold-muted">
+            <p class="font-bold text-center">© 2026 Pratik Kanpurwar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- ================= 10. ASTROBOT FLOATING POPUP ICON ================= -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end group">
+
+        <!-- Hover Message Pop-up -->
+        <div
+            class="opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-3 transition-all duration-300 ease-out pointer-events-none group-hover:pointer-events-auto mb-3 max-w-[220px] sm:max-w-xs">
+            <div
+                class="bg-[#18060f]/95 border border-[#e1c78e] text-[#f4e6b0] p-3 rounded-2xl shadow-2xl backdrop-blur-md relative text-xs">
+                <div class="flex items-center gap-2 font-semibold text-amber-300 mb-1">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>AstroBot Online ✦</span>
+                </div>
+                <p class="text-[#e1c78e] text-[11px] leading-relaxed">
+                    Hi there! I'm AstroBot 🤖, your cosmic AI friend. How can I help you today?
+                </p>
+                <!-- Downward Arrow -->
+                <div
+                    class="absolute -bottom-1.5 right-5 w-3 h-3 bg-[#18060f] border-r border-b border-[#e1c78e] transform rotate-45">
+                </div>
+            </div>
+        </div>
+
+        <!-- Advanced Animated Robot Icon Button -->
+        <a href="astrobot.html" aria-label="AstroBot"
+            class="animate-bot-float animate-bot-glow relative w-14 h-14 rounded-full bg-gradient-to-br from-[#2d0816] via-[#430f23] to-[#16040a] border-2 border-[#e1c78e] flex items-center justify-center text-amber-300 text-2xl transition-all duration-300 group-hover:scale-110">
+            <i class="fa-solid fa-robot group-hover:rotate-12 transition-transform duration-300"></i>
+
+            <!-- Live Status Dot -->
+            <span
+                class="absolute top-0.5 right-0.5 w-3.5 h-3.5 bg-emerald-500 border-2 border-[#0b0306] rounded-full"></span>
+        </a>
+    </div>
+
+
+    <!-- ================= 6. JAVASCRIPT ================= -->
+    <script>
+        // Mobile Navigation Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // Send Form Data Directly to WhatsApp
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('contactName').value.trim();
+            const phone = document.getElementById('contactPhone').value.trim();
+            const email = document.getElementById('contactEmail').value.trim() || 'Not Provided';
+            const purpose = document.getElementById('contactPurpose').value;
+            const message = document.getElementById('contactMessage').value.trim();
+
+            const text = `Hello Pratik Sir,%0A%0AI want to connect regarding *${purpose}*.%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Email:* ${email}%0A*Message:* ${message}`;
+
+            const whatsappUrl = `https://wa.me/918262071166?text=${text}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+
+</html>

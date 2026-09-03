@@ -1,0 +1,1163 @@
+/* ===========================================================
+   NAVBAR.CSS
+   Premium Portfolio Website
+   Part 1
+   =========================================================== */
+
+
+/* ===========================================================
+   HEADER
+   =========================================================== */
+
+#header{
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    z-index: var(--z-navbar);
+
+    transition:
+        background var(--transition-normal),
+        box-shadow var(--transition-normal),
+        transform var(--transition-normal);
+
+}
+
+
+/* ===========================================================
+   NAVBAR
+   =========================================================== */
+
+.navbar{
+
+    width: 100%;
+
+    padding: 20px 0;
+
+}
+
+
+/* ===========================================================
+   NAVBAR CONTAINER
+   =========================================================== */
+
+.navbar-container{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    height: var(--navbar-height);
+
+}
+
+
+
+/* ===========================================================
+   NAVIGATION MENU
+   =========================================================== */
+
+.nav-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:var(--space-lg);
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+
+/* ===========================================================
+   NAVIGATION LINKS
+   =========================================================== */
+
+.nav-link{
+
+    position:relative;
+
+    color:var(--color-text);
+
+    font-size:var(--fs-body);
+
+    font-weight:var(--font-medium);
+
+    text-decoration:none;
+
+    transition:color var(--transition-normal);
+
+}
+
+
+.nav-link:hover,
+
+.nav-link.active{
+
+    color:var(--color-primary);
+
+}
+
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--color-primary);
+
+    transition:width var(--transition-normal);
+
+}
+
+
+.nav-link:hover::after,
+
+.nav-link.active::after{
+
+    width:100%;
+
+}
+
+
+/* ===========================================================
+   NAVBAR RIGHT SIDE
+   =========================================================== */
+
+.navbar-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:var(--space-sm);
+
+}
+
+
+/* ===========================================================
+   SOCIAL LINKS
+   =========================================================== */
+
+.social-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+.social-icon{
+
+    width:44px;
+
+    height:44px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    text-decoration:none;
+
+    color:var(--color-text);
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid var(--color-border);
+
+    transition:all var(--transition-normal);
+
+}
+
+
+.social-icon:hover{
+
+    color:var(--color-primary);
+
+    border-color:var(--color-primary);
+
+    transform:translateY(-3px);
+
+    box-shadow:var(--shadow-glow);
+
+}
+
+
+
+
+/* ===========================================================
+   GLASS EFFECT
+   =========================================================== */
+
+#header{
+
+    background: rgba(11,15,25,.65);
+
+    backdrop-filter: blur(20px);
+
+    -webkit-backdrop-filter: blur(20px);
+
+    border-bottom: 1px solid rgba(255,255,255,.05);
+
+}
+
+
+/* ===========================================================
+   LOGO
+   =========================================================== */
+
+.logo{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+}
+
+
+.logo-text{
+
+    font-family: var(--font-heading);
+
+    font-size: 1.7rem;
+
+    font-weight: var(--font-bold);
+
+    color: var(--color-heading);
+
+    letter-spacing: -.5px;
+
+    transition: color var(--transition-fast);
+
+}
+
+
+.logo-text{
+
+    font-family: var(--font-heading);
+
+    font-size: 1.7rem;
+
+    font-weight: var(--font-bold);
+
+    color: var(--color-heading);
+
+    letter-spacing: -.5px;
+
+}
+
+
+
+.logo:hover .logo-text{
+
+    color: var(--color-primary);
+
+}
+
+
+.logo .text-gradient{
+
+    font-weight: var(--font-bold);
+
+}
+
+
+/* ===========================================================
+   NAVIGATION
+   =========================================================== */
+
+.nav-links{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 36px;
+
+}
+
+
+/* ===========================================================
+   NAVIGATION LIST
+   =========================================================== */
+
+.nav-links li{
+
+    position: relative;
+
+}
+
+
+/* ===========================================================
+   NAVIGATION LINK
+   =========================================================== */
+
+.nav-link{
+
+    position: relative;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: var(--color-text);
+
+    font-size: 1rem;
+
+    font-weight: var(--font-medium);
+
+    transition:
+        color var(--transition-fast);
+
+}
+
+
+.nav-link:hover{
+
+    color: var(--color-primary);
+
+}
+
+
+/* ===========================================================
+   ACTIVE LINK
+   =========================================================== */
+
+.nav-link.active{
+
+    color: var(--color-primary);
+
+}
+
+
+
+/* ===========================================================
+   NAVBAR.CSS
+   Part 2
+   Navigation Effects • CTA Button
+   =========================================================== */
+
+
+/* ===========================================================
+   NAVIGATION UNDERLINE
+   =========================================================== */
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:100%;
+
+    height:2px;
+
+    background:var(--gradient-primary);
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:transform var(--transition-normal);
+
+}
+
+
+.nav-link:hover::after,
+
+.nav-link.active::after{
+
+    transform:scaleX(1);
+
+}
+
+
+/* ===========================================================
+   ACTIVE LINK
+   =========================================================== */
+
+.nav-link.active{
+
+    color:var(--color-primary);
+
+}
+
+
+/* ===========================================================
+   NAVIGATION HOVER
+   =========================================================== */
+
+.nav-link{
+
+    letter-spacing:.2px;
+
+    transition:
+
+        color var(--transition-fast),
+
+        transform var(--transition-fast);
+
+}
+
+
+.nav-link:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ===========================================================
+   NAVIGATION RIGHT
+   =========================================================== */
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+
+/* ===========================================================
+   GITHUB BUTTON
+   =========================================================== */
+
+.github-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:12px 22px;
+
+    border-radius:var(--button-radius);
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid var(--color-border);
+
+    color:var(--color-heading);
+
+    font-weight:var(--font-medium);
+
+    transition:
+
+        all var(--transition-normal);
+
+}
+
+
+.github-btn:hover{
+
+    color:var(--color-primary);
+
+    border-color:rgba(0,229,255,.30);
+
+    background:rgba(0,229,255,.08);
+
+    transform:translateY(-3px);
+
+    box-shadow:var(--shadow-glow);
+
+}
+
+
+.github-btn i{
+
+    font-size:1.1rem;
+
+}
+
+
+/* ===========================================================
+   CONTACT BUTTON
+   =========================================================== */
+
+.contact-btn{
+
+    margin-left:8px;
+
+}
+
+
+/* ===========================================================
+   NAVBAR SCROLL SHADOW
+   =========================================================== */
+
+#header.scrolled{
+
+    box-shadow:
+
+        0 10px 40px rgba(0,0,0,.30);
+
+}
+
+
+/* ===========================================================
+   NAVIGATION SPACING
+   =========================================================== */
+
+.nav-links li{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+/* ===========================================================
+   DESKTOP ONLY
+   =========================================================== */
+
+.desktop-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:36px;
+
+}
+
+
+/* ===========================================================
+   END OF PART 2
+   =========================================================== */
+
+
+/* ===========================================================
+   NAVBAR.CSS
+   Part 3
+   Sticky Navbar • Scroll Effects • Glass Polish
+   =========================================================== */
+
+
+/* ===========================================================
+   STICKY NAVBAR STATE
+   =========================================================== */
+
+#header.scrolled{
+
+    background:rgba(11,15,25,.82);
+
+    backdrop-filter:blur(24px);
+
+    -webkit-backdrop-filter:blur(24px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        0 12px 40px rgba(0,0,0,.28);
+
+}
+
+
+/* ===========================================================
+   NAVBAR SHRINK
+   =========================================================== */
+
+#header.scrolled .navbar{
+
+    padding:12px 0;
+
+}
+
+
+/* ===========================================================
+   LOGO TRANSITION
+   =========================================================== */
+
+.logo{
+
+    transition:
+        transform var(--transition-normal);
+
+}
+
+
+#header.scrolled .logo{
+
+    transform:scale(.97);
+
+}
+
+
+/* ===========================================================
+   NAVIGATION TRANSITION
+   =========================================================== */
+
+.nav-links{
+
+    transition:gap var(--transition-normal);
+
+}
+
+
+#header.scrolled .nav-links{
+
+    gap:32px;
+
+}
+
+
+/* ===========================================================
+   NAV LINK SMOOTH EFFECT
+   =========================================================== */
+
+.nav-link{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+/* ===========================================================
+   NAV LINK GLOW
+   =========================================================== */
+
+.nav-link::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-12px;
+
+    width:0;
+
+    height:8px;
+
+    background:rgba(0,229,255,.18);
+
+    border-radius:999px;
+
+    transform:translateX(-50%);
+
+    filter:blur(10px);
+
+    transition:
+
+        width var(--transition-normal);
+
+}
+
+
+.nav-link:hover::before,
+
+.nav-link.active::before{
+
+    width:70%;
+
+}
+
+
+/* ===========================================================
+   NAVBAR HOVER BACKGROUND
+   =========================================================== */
+
+.nav-link{
+
+    padding:8px 4px;
+
+}
+
+
+.nav-link:hover{
+
+    color:var(--color-primary);
+
+}
+
+
+/* ===========================================================
+   DESKTOP NAV ALIGNMENT
+   =========================================================== */
+
+.navbar-container{
+
+    position:relative;
+
+}
+
+
+/* ===========================================================
+   HEADER ANIMATION
+   =========================================================== */
+
+#header{
+
+    will-change:
+
+        background,
+
+        transform,
+
+        backdrop-filter;
+
+}
+
+
+/* ===========================================================
+   SCROLL TRANSFORM
+   =========================================================== */
+
+#header.hide{
+
+    transform:translateY(-100%);
+
+}
+
+
+#header.show{
+
+    transform:translateY(0);
+
+}
+
+
+/* ===========================================================
+   END OF PART 3
+   =========================================================== */
+
+
+/* ===========================================================
+   NAVBAR.CSS
+   Part 4
+   Mobile Navigation
+   =========================================================== */
+
+
+/* ===========================================================
+   HAMBURGER BUTTON
+   =========================================================== */
+
+.menu-toggle{
+
+    display:none;
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    background:transparent;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-direction:column;
+
+    gap:6px;
+
+    transition:all var(--transition-normal);
+
+}
+
+
+/* ===========================================================
+   HAMBURGER LINES
+   =========================================================== */
+
+.menu-toggle span{
+
+    width:28px;
+
+    height:2px;
+
+    border-radius:999px;
+
+    background:var(--color-heading);
+
+    transition:all var(--transition-normal);
+
+}
+
+
+/* ===========================================================
+   ACTIVE HAMBURGER
+   =========================================================== */
+
+.menu-toggle.active span:nth-child(1){
+
+    transform:
+        translateY(8px)
+        rotate(45deg);
+
+}
+
+
+.menu-toggle.active span:nth-child(2){
+
+    opacity:0;
+
+}
+
+
+.menu-toggle.active span:nth-child(3){
+
+    transform:
+        translateY(-8px)
+        rotate(-45deg);
+
+}
+
+
+/* ===========================================================
+   MOBILE MENU
+   =========================================================== */
+
+.mobile-menu{
+
+    position:fixed;
+
+    top:0;
+
+    right:-100%;
+
+    width:320px;
+
+    max-width:85%;
+
+    height:100vh;
+
+    padding:120px 40px 50px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+    background:rgba(11,15,25,.96);
+
+    backdrop-filter:blur(30px);
+
+    -webkit-backdrop-filter:blur(30px);
+
+    border-left:1px solid rgba(255,255,255,.08);
+
+    transition:right .45s ease;
+
+    z-index:var(--z-overlay);
+
+}
+
+
+/* ===========================================================
+   MOBILE MENU ACTIVE
+   =========================================================== */
+
+.mobile-menu.active{
+
+    right:0;
+
+}
+
+
+/* ===========================================================
+   MOBILE LINKS
+   =========================================================== */
+
+.mobile-menu .nav-link{
+
+    font-size:1.1rem;
+
+    color:var(--color-text);
+
+    padding:10px 0;
+
+    transition:all var(--transition-fast);
+
+}
+
+
+.mobile-menu .nav-link:hover{
+
+    color:var(--color-primary);
+
+    padding-left:10px;
+
+}
+
+
+/* ===========================================================
+   MOBILE MENU OVERLAY
+   =========================================================== */
+
+.menu-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    backdrop-filter:blur(4px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:
+
+        opacity var(--transition-normal),
+
+        visibility var(--transition-normal);
+
+    z-index:calc(var(--z-overlay) - 1);
+
+}
+
+
+/* ===========================================================
+   OVERLAY ACTIVE
+   =========================================================== */
+
+.menu-overlay.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+/* ===========================================================
+   MOBILE MENU SCROLL
+   =========================================================== */
+
+.mobile-menu{
+
+    overflow-y:auto;
+
+    scrollbar-width:thin;
+
+}
+
+
+/* ===========================================================
+   MOBILE MENU LOGO
+   =========================================================== */
+
+.mobile-logo{
+
+    margin-bottom:24px;
+
+}
+
+
+/* ===========================================================
+   NAVBAR.CSS
+   Part 5
+   Final Polish • Accessibility • Responsive Preparation
+   =========================================================== */
+
+
+/* ===========================================================
+   FOCUS STATES
+   =========================================================== */
+
+.logo:focus-visible,
+.nav-link:focus-visible,
+.github-btn:focus-visible,
+.menu-toggle:focus-visible{
+
+    outline:2px solid var(--color-primary);
+
+    outline-offset:6px;
+
+    border-radius:8px;
+
+}
+
+
+/* ===========================================================
+   SELECTION DISABLE
+   =========================================================== */
+
+.logo,
+.nav-link,
+.menu-toggle{
+
+    user-select:none;
+
+}
+
+
+/* ===========================================================
+   TOUCH HIGHLIGHT
+   =========================================================== */
+
+.logo,
+.nav-link,
+.menu-toggle{
+
+    -webkit-tap-highlight-color:transparent;
+
+}
+
+
+/* ===========================================================
+   LOGO ICON (OPTIONAL)
+   =========================================================== */
+
+.logo img{
+
+    width:42px;
+
+    height:42px;
+
+    object-fit:contain;
+
+}
+
+
+/* ===========================================================
+   NAVBAR PERFORMANCE
+   =========================================================== */
+
+#header,
+.navbar,
+.nav-link,
+.logo{
+
+    will-change:
+
+        transform,
+
+        opacity,
+
+        backdrop-filter;
+
+}
+
+
+/* ===========================================================
+   REDUCED MOTION SUPPORT
+   =========================================================== */
+
+@media (prefers-reduced-motion: reduce){
+
+    #header,
+    .navbar,
+    .nav-link,
+    .logo,
+    .menu-toggle,
+    .mobile-menu{
+
+        transition:none !important;
+
+        animation:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+
+/* ===========================================================
+   LARGE DESKTOP OPTIMIZATION
+   =========================================================== */
+
+@media (min-width:1600px){
+
+    .navbar-container{
+
+        max-width:1450px;
+
+        margin:auto;
+
+    }
+
+}
+
+
+/* ===========================================================
+   RESPONSIVE PREPARATION
+
+   NOTE:
+   Actual Mobile Responsive CSS
+   will be written inside
+
+   responsive.css
+
+   =========================================================== */
+
+@media (max-width:992px){
+
+    .desktop-menu{
+
+        display:none;
+
+    }
+
+    .menu-toggle{
+
+        display:flex;
+
+    }
+
+}
+
+
+/* ===========================================================
+   END OF NAVBAR.CSS
+   =========================================================== */

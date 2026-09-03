@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-[#0b0306]">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | Pratik Kanpurwar - Vedic Astrology</title>
+    <meta name="description"
+        content="Find answers to common questions about Vedic Astrology readings, Kundli analysis, gemstones, remedies, and astrology courses by Pratik Kanpurwar.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Cinzel (Headings) + Outfit (Body Text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons (Version 6.5.1) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        html,
+        body {
+            background-color: #0b0306 !important;
+            color: #e1c78e;
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .font-serif-cinzel {
+            font-family: 'Cinzel', serif;
+        }
+
+        /* Cosmic Deep Burgundy Background Gradient */
+        .cosmic-burgundy-bg {
+            background: radial-gradient(circle at 50% 0%, #2d0816 0%, #16040a 60%, #0b0306 100%) !important;
+            background-attachment: fixed !important;
+        }
+
+        /* Warm Faint Gold Palette */
+        .text-gold-bright {
+            color: #f4e6b0;
+        }
+
+        .text-gold-faint {
+            color: #e1c78e;
+        }
+
+        .text-gold-muted {
+            color: #bfa56f;
+        }
+
+        .border-gold-faint {
+            border-color: rgba(225, 199, 142, 0.22);
+        }
+
+        .bg-wine-dark {
+            background-color: #18060f;
+        }
+
+        /* Headline Mouse Hover Glow Effect */
+        .glow-headline {
+            transition: text-shadow 0.4s ease-in-out, color 0.4s ease-in-out, transform 0.4s ease-in-out;
+            cursor: default;
+        }
+
+        .glow-headline:hover {
+            color: #ffffff !important;
+            text-shadow: 0 0 15px rgba(244, 230, 176, 0.9),
+                0 0 30px rgba(212, 175, 55, 0.75),
+                0 0 50px rgba(212, 175, 55, 0.5),
+                0 0 70px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Glassmorphic Card */
+        .glass-card-wine {
+            background: rgba(24, 6, 15, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(225, 199, 142, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .glass-card-wine:hover {
+            border-color: rgba(244, 230, 176, 0.5);
+            box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.2);
+        }
+
+        /* Form Inputs */
+        .input-wine {
+            background-color: rgba(12, 3, 7, 0.85) !important;
+            border: 1px solid rgba(225, 199, 142, 0.25);
+            color: #f4e6b0 !important;
+        }
+
+        .input-wine:focus {
+            outline: none;
+            border-color: #e1c78e;
+            box-shadow: 0 0 15px rgba(225, 199, 142, 0.35);
+        }
+
+        /* Cosmic Background Pattern */
+        .star-pattern {
+            background-image: radial-gradient(rgba(225, 199, 142, 0.12) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0b0306;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #2d0816;
+            border-radius: 4px;
+            border: 1px solid rgba(225, 199, 142, 0.2);
+        }
+
+        /* AstroBot Floating & Glowing Animation */
+        @keyframes botFloat {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        @keyframes botGlow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 15px rgba(212, 175, 55, 0.4), 0 0 25px rgba(212, 175, 55, 0.2);
+            }
+
+            50% {
+                box-shadow: 0 0 25px rgba(244, 230, 176, 0.8), 0 0 40px rgba(212, 175, 55, 0.5);
+            }
+        }
+
+        .animate-bot-float {
+            animation: botFloat 3s ease-in-out infinite;
+        }
+
+        .animate-bot-glow {
+            animation: botGlow 2.5s infinite alternate;
+        }
+    </style>
+</head>
+
+<body class="star-pattern cosmic-burgundy-bg min-h-screen flex flex-col justify-between">
+
+    <!-- ================= 1. NAVIGATION BAR ================= -->
+    <nav
+        class="fixed top-0 left-0 w-full z-50 bg-[#0b0306]/95 backdrop-blur-md border-b border-gold-faint px-4 sm:px-8 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+
+            <!-- Logo -->
+            <a href="index.html"
+                class="font-serif-cinzel text-lg sm:text-2xl font-bold tracking-widest text-gold-bright flex items-center gap-2">
+                <span class="text-amber-300 text-xl">✦</span> The Astro Alchemist
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden lg:flex items-center space-x-2.5 text-xs xl:text-sm font-medium">
+                <a href="index.html"
+                    class="px-4 py-2 rounded-xl bg-[#13040a]/60 border border-gold-faint/20 text-gold-muted hover:text-gold-bright hover:border-gold-bright/50 hover:bg-[#230814] hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] transition-all duration-300">
+                    Home
+                </a>
+
+                <a href="courses.html"
+                    class="px-4 py-2 rounded-xl bg-[#13040a]/60 border border-gold-faint/20 text-gold-muted hover:text-gold-bright hover:border-gold-bright/50 hover:bg-[#230814] hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] transition-all duration-300">
+                    Astrology Courses
+                </a>
+
+                <a href="gems.html"
+                    class="px-4 py-2 rounded-xl bg-[#13040a]/60 border border-gold-faint/20 text-gold-muted hover:text-gold-bright hover:border-gold-bright/50 hover:bg-[#230814] hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] transition-all duration-300">
+                    Gems
+                </a>
+
+                <!-- Active Page Card (FAQs) -->
+                <a href="faqs.html"
+                    class="px-4 py-2 rounded-xl bg-gradient-to-r from-[#2d0a18] to-[#1c050f] border border-gold-bright/70 text-gold-bright font-semibold shadow-[0_0_12px_rgba(212,175,55,0.3)] -translate-y-0.5 transition-all duration-300">
+                    FAQs
+                </a>
+
+                <a href="contact.html"
+                    class="px-4 py-2 rounded-xl bg-[#13040a]/60 border border-gold-faint/20 text-gold-muted hover:text-gold-bright hover:border-gold-bright/50 hover:bg-[#230814] hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] transition-all duration-300">
+                    Contact Us
+                </a>
+
+                <a href="astrobot.html"
+                    class="px-4 py-2 rounded-xl bg-[#13040a]/60 border border-gold-faint/20 text-gold-muted hover:text-gold-bright hover:border-gold-bright/50 hover:bg-[#230814] hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] transition-all duration-300">
+                    AstroBot
+                </a>
+            </div>
+
+            <!-- Desktop CTA -->
+            <a href="index.html#consult"
+                class="hidden sm:inline-flex border border-gold-faint bg-[#2d0816]/80 text-gold-bright hover:bg-gradient-to-r hover:from-[#d4af37] hover:to-[#aa7c11] hover:text-slate-950 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition duration-300 shadow-md">
+                Book Consultation
+            </a>
+
+            <!-- Mobile Hamburger Menu Button -->
+            <button id="menuBtn" class="lg:hidden text-gold-bright text-2xl focus:outline-none p-1"
+                aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu"
+            class="hidden lg:hidden flex-col bg-[#16040a] border-b border-gold-faint px-6 py-6 space-y-4 mt-3 rounded-b-2xl shadow-2xl">
+            <a href="index.html" class="text-gold-muted hover:text-gold-bright text-sm block">Home</a>
+            <a href="courses.html" class="text-gold-muted hover:text-gold-bright text-sm block">Astrology Courses</a>
+            <a href="gems.html" class="text-gold-muted hover:text-gold-bright text-sm block">Gems</a>
+            <a href="faqs.html" class="text-gold-bright font-semibold text-sm block">FAQs</a>
+            <a href="contact.html" class="text-gold-muted hover:text-gold-bright text-sm block">Contact Us</a>
+            <a href="astrobot.html" class="text-gold-muted hover:text-gold-bright text-sm block">AstroBot</a>
+            <a href="index.html#consult"
+                class="block text-center border border-gold-faint bg-[#2d0816] text-gold-bright py-3 rounded-xl text-xs font-bold uppercase tracking-wider">
+                Book Private Consultation
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- ================= 2. HERO SECTION ================= -->
+    <section class="pt-32 sm:pt-40 pb-12 px-4 sm:px-6 max-w-4xl mx-auto text-center flex flex-col items-center">
+        <div
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold-faint bg-[#1d050f]/80 mb-6 text-xs text-gold-faint tracking-widest uppercase">
+            <span class="text-amber-300">✦</span> Clear Your Doubts
+        </div>
+
+        <h1
+            class="font-serif-cinzel glow-headline text-3xl sm:text-5xl font-bold text-gold-bright tracking-wide leading-tight mb-4">
+            Frequently Asked Questions
+        </h1>
+
+        <p class="text-gold-muted text-sm sm:text-base font-light leading-relaxed max-w-2xl mb-8">
+            Have questions about how consultations work, gemstone authenticity, or astrology courses? We have compiled
+            responses to help guide you.
+        </p>
+
+        <!-- Search Input -->
+        <div class="w-full max-w-xl relative">
+            <input type="text" id="faqSearch" onkeyup="filterFaqs()"
+                placeholder="Search questions (e.g. Gemstone, Kundli, Time of birth)..."
+                class="w-full input-wine rounded-full px-6 py-3.5 text-xs sm:text-sm pl-12 shadow-lg">
+            <i
+                class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-gold-muted text-sm"></i>
+        </div>
+    </section>
+
+    <div class="text-center text-gold-muted text-xs tracking-widest my-2">✦ ✦ ✦</div>
+
+
+    <!-- ================= 3. FAQ ACCORDION SECTION ================= -->
+    <section class="py-12 px-4 sm:px-6 max-w-4xl mx-auto flex-grow w-full">
+
+        <!-- Category 1: Consultation & Birth Details -->
+        <div class="mb-10 faq-category">
+            <h2
+                class="font-serif-cinzel text-lg sm:text-xl text-amber-300 font-bold mb-4 flex items-center gap-2 border-b border-gold-faint/30 pb-2">
+                <i class="fa-solid fa-comments"></i> Consultations & Process
+            </h2>
+
+            <div class="space-y-4">
+
+                <!-- FAQ Item 1 -->
+                <div class="glass-card-wine rounded-2xl overflow-hidden faq-item">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-5 flex justify-between items-center text-gold-bright font-semibold text-xs sm:text-sm hover:text-amber-300 transition">
+                        <span>How is a consultation session conducted with Pratik Kanpurwar?</span>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon text-amber-400 transition-transform duration-300"></i>
+                    </button>
+                    <div
+                        class="faq-answer hidden px-5 pb-5 text-gold-faint text-xs sm:text-sm font-light leading-relaxed border-t border-gold-faint/20 pt-3">
+                        Consultations are conducted online via 1-on-1 audio/video call or phone call as per your
+                        convenience. Once you fill in your birth details and request a slot via WhatsApp, we schedule a
+                        private session dedicated entirely to your queries.
+                    </div>
+                </div>
+
+                <!-- NEW FAQ Item: Modes of Consultation -->
+                <div class="glass-card-wine rounded-2xl overflow-hidden faq-item">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-5 flex justify-between items-center text-gold-bright font-semibold text-xs sm:text-sm hover:text-amber-300 transition">
+                        <span>What are the modes of consultation available?</span>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon text-amber-400 transition-transform duration-300"></i>
+                    </button>
+                    <div
+                        class="faq-answer hidden px-5 pb-5 text-gold-faint text-xs sm:text-sm font-light leading-relaxed border-t border-gold-faint/20 pt-3">
+                        Consultations can be conducted via Audio/Video Phone Call, WhatsApp Call, Google Meet, or Zoom
+                        Meetings as per your choice and convenience.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="glass-card-wine rounded-2xl overflow-hidden faq-item">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-5 flex justify-between items-center text-gold-bright font-semibold text-xs sm:text-sm hover:text-amber-300 transition">
+                        <span>What details are required for an accurate Kundli analysis?</span>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon text-amber-400 transition-transform duration-300"></i>
+                    </button>
+                    <div
+                        class="faq-answer hidden px-5 pb-5 text-gold-faint text-xs sm:text-sm font-light leading-relaxed border-t border-gold-faint/20 pt-3">
+                        You need to provide your exact <strong>Date of Birth</strong>, <strong>Time of Birth</strong>,
+                        and <strong>Place of Birth</strong>. These three parameters allow us to generate your precise
+                        birth chart (Janam Kundli) and planetary dashas.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="glass-card-wine rounded-2xl overflow-hidden faq-item">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-5 flex justify-between items-center text-gold-bright font-semibold text-xs sm:text-sm hover:text-amber-300 transition">
+                        <span>What if I don't know my exact time of birth?</span>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon text-amber-400 transition-transform duration-300"></i>
+                    </button>
+                    <div
+                        class="faq-answer hidden px-5 pb-5 text-gold-faint text-xs sm:text-sm font-light leading-relaxed border-t border-gold-faint/20 pt-3">
+                        If your birth time is approximate (within a 15-20 minute range), we perform Birth Time
+                        Rectification (BTR) by matching past life events. If you don't know the time at all, Prashna
+                        Kundli (Horary Astrology) or Palmistry guidance is used to answer pressing questions.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="glass-card-wine rounded-2xl overflow-hidden faq-item">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-5 flex justify-between items-center text-gold-bright font-semibold text-xs sm:text-sm hover:text-amber-300 transition">
+                        <span>Is my personal information and reading kept confidential?</span>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon text-amber-400 transition-transform duration-300"></i>
+                    </button>
+                    <div
+                        class="faq-answer hidden px-5 pb-5 text-gold-faint text-xs sm:text-sm font-light leading-relaxed border-t border-gold-faint/20 pt-3">
+                        Yes, 100%. We adhere to strict ethical standards. Your birth details, personal stories, and
+                        consultation conversations are held in absolute sacred privacy and are never shared with anyone.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Category 2: Gemstones & Remedies -->
+        <div class="mb-10 faq-category">
+            <h2
+                class="font-serif-cinzel text-lg sm:text-xl text-amber-300 font-bold mb-4 flex items-center gap-2 border-b border-gold-faint/30 pb-2">
+                <i class="fa-solid fa-gem"></i> Gemstones & Remedies
+            </h2>
+
+            <div class="space-y-4">
+
+                <!-- FAQ Item 5 -->
+                <div class="glass-card-wine rounded-2xl overflow-hidden faq-item">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-5 flex justify-between items-center text-gold-bright font-semibold text-xs sm:text-sm hover:text-amber-300 transition">
+                        <span>Are the gemstones recommended certified and genuine?</span>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon text-amber-400 transition-transform duration-300"></i>
+                    </button>
+                    <div
+                        class="faq-answer hidden px-5 pb-5 text-gold-faint text-xs sm:text-sm font-light leading-relaxed border-t border-gold-faint/20 pt-3">
+                        Yes. Every gemstone recommended is 100% natural, unheated, untreated, and comes with a
+                        certificate of authenticity from recognized gemological laboratories.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="glass-card-wine rounded-2xl overflow-hidden faq-item">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-5 flex justify-between items-center text-gold-bright font-semibold text-xs sm:text-sm hover:text-amber-300 transition">
+                        <span>Do I mandatory need to buy expensive gemstones for remedies?</span>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon text-amber-400 transition-transform duration-300"></i>
+                    </button>
+                    <div
+                        class="faq-answer hidden px-5 pb-5 text-gold-faint text-xs sm:text-sm font-light leading-relaxed border-t border-gold-faint/20 pt-3">
+                        No. Gemstones are optional. We prioritize practical Vedic remedies such as Mantra Chanting, Daan
+                        (Charity), Habit Corrections, and Yantra/Rudraksha practices that are cost-effective and highly
+                        potent.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Category 3: Courses & Learning -->
+        <div class="mb-10 faq-category">
+            <h2
+                class="font-serif-cinzel text-lg sm:text-xl text-amber-300 font-bold mb-4 flex items-center gap-2 border-b border-gold-faint/30 pb-2">
+                <i class="fa-solid fa-graduation-cap"></i> Astrology Courses
+            </h2>
+
+            <div class="space-y-4">
+
+                <!-- FAQ Item 7 -->
+                <div class="glass-card-wine rounded-2xl overflow-hidden faq-item">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-5 flex justify-between items-center text-gold-bright font-semibold text-xs sm:text-sm hover:text-amber-300 transition">
+                        <span>Can beginners with no prior knowledge join the courses?</span>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon text-amber-400 transition-transform duration-300"></i>
+                    </button>
+                    <div
+                        class="faq-answer hidden px-5 pb-5 text-gold-faint text-xs sm:text-sm font-light leading-relaxed border-t border-gold-faint/20 pt-3">
+                        Absolutely! Our Foundation Course starts from the fundamental basics—explaining planets, houses,
+                        signs, and aspects step-by-step in easy-to-understand language.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div class="glass-card-wine rounded-2xl overflow-hidden faq-item">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-5 flex justify-between items-center text-gold-bright font-semibold text-xs sm:text-sm hover:text-amber-300 transition">
+                        <span>Will I get class recordings if I miss a live session?</span>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon text-amber-400 transition-transform duration-300"></i>
+                    </button>
+                    <div
+                        class="faq-answer hidden px-5 pb-5 text-gold-faint text-xs sm:text-sm font-light leading-relaxed border-t border-gold-faint/20 pt-3">
+                        Yes, high-quality session recordings along with course PDF notes are shared with enrolled
+                        students after every live class.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ================= 4. STILL HAVE QUESTIONS CTA ================= -->
+    <section class="py-12 px-4 sm:px-6 max-w-3xl mx-auto w-full mb-12">
+        <div class="glass-card-wine p-8 rounded-3xl text-center border border-amber-400/40 shadow-xl">
+            <div class="text-3xl mb-3">💬</div>
+            <h3 class="font-serif-cinzel text-xl sm:text-2xl text-gold-bright font-bold mb-2">Still Have Unanswered
+                Questions?</h3>
+            <p class="text-gold-muted text-xs sm:text-sm mb-6 max-w-lg mx-auto">
+                Feel free to connect directly with us on WhatsApp. We are here to guide you with complete warmth and
+                clarity.
+            </p>
+            <a href="https://wa.me/918262071166?text=Hello%20Pratik%20sir,%20I%20have%20a%20question%20regarding%20astrology%20consultation."
+                target="_blank"
+                class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#d4af37] via-[#c5a059] to-[#aa7c11] text-slate-950 font-bold px-7 py-3.5 rounded-xl text-xs sm:text-sm uppercase tracking-wider hover:opacity-90 transition shadow-lg">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Chat Directly on WhatsApp
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ================= 5. PREMIUM FOOTER ================= -->
+    <footer class="bg-[#080204] border-t border-gold-faint pt-12 pb-8 px-4 sm:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+
+            <!-- Col 1: About -->
+            <div class="space-y-3">
+                <a href="index.html"
+                    class="font-serif-cinzel text-lg font-bold text-gold-bright flex items-center gap-2">
+                    <span class="text-amber-300">✦</span> PRATIK KANPURWAR
+                </a>
+                <p class="text-gold-muted text-xs leading-relaxed">
+                    Vedic Astrology, Horoscope Analysis, and Sacred Life Guidance. Standing beside you as a true
+                    well-wisher on life's journey.
+                </p>
+                <div class="text-amber-300/80 text-xs italic font-bold pt-1">
+                    "लोकाः समस्ताः सुखिनो भवन्तु"
+                </div>
+            </div>
+
+            <!-- Col 2: Site Navigation -->
+            <div>
+                <h4 class="font-serif-cinzel text-gold-bright font-bold text-sm mb-3 uppercase tracking-wider">Quick
+                    Links</h4>
+                <ul class="space-y-2 text-xs text-gold-muted">
+                    <li><a href="index.html" class="hover:text-gold-bright transition">Home Page</a></li>
+                    <li><a href="courses.html" class="hover:text-gold-bright transition">Astrology Courses</a></li>
+                    <li><a href="gems.html" class="hover:text-gold-bright transition">Gems</a></li>
+                    <li><a href="faqs.html" class="hover:text-gold-bright transition">Frequently Asked Questions</a>
+                    </li>
+                    <li><a href="contact.html" class="hover:text-gold-bright transition">Contact Us</a></li>
+                    <li><a href="astrobot.html" class="hover:text-gold-bright transition">AstroBot</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Key Offerings -->
+            <div>
+                <h4 class="font-serif-cinzel text-gold-bright font-bold text-sm mb-3 uppercase tracking-wider">Our
+                    Services</h4>
+                <ul class="space-y-2 text-xs text-gold-muted">
+                    <li><a href="index.html#consult" class="hover:text-gold-bright transition">Full Kundli Analysis</a>
+                    </li>
+                    <li><a href="index.html#consult" class="hover:text-gold-bright transition">Career & Business
+                            Guidance</a></li>
+                    <li><a href="index.html#consult" class="hover:text-gold-bright transition">Marriage &
+                            Matchmaking</a></li>
+                    <li><a href="index.html#consult" class="hover:text-gold-bright transition">Cesarean Birth Muhurt</a>
+                    </li>
+                    <li><a href="gems.html" class="hover:text-gold-bright transition">Vastu & Gemstones</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Reach Out & Social Links -->
+            <div class="space-y-3">
+                <h4 class="font-serif-cinzel text-gold-bright font-bold text-sm mb-3 uppercase tracking-wider">Get in
+                    Touch</h4>
+                <p class="text-gold-muted text-xs flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-amber-400"></i> +91 8262071166 / 8208037091
+                </p>
+                <p class="text-gold-muted text-xs flex items-center gap-2">
+                    <i class="fa-solid fa-envelope text-amber-400"></i> Email: consult.pratikkanpurwar@gmail.com
+                </p>
+                <p class="text-gold-muted text-xs flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-amber-400"></i> Pune, Maharashtra, India
+                </p>
+
+                <!-- Social Media Links -->
+                <div class="pt-2 flex gap-2.5 text-gold-bright flex-wrap">
+                    <a href="https://wa.me/918262071166" target="_blank" rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-[#18060f] border border-gold-faint flex items-center justify-center text-xs hover:bg-[#2d0816]"
+                        aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://youtube.com/@pratikkanpurwar4057?si=vgxUoqk-8dP_anSP" target="_blank"
+                        rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-[#18060f] border border-gold-faint flex items-center justify-center text-xs hover:bg-[#2d0816]"
+                        aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/the.astroalchemist?utm_source=qr&igsh=MWl6d2F3aGV3MzF3MA==&igsi=MWl6d2F3aGV3MzF3MA=="
+                        target="_blank" rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-[#18060f] border border-gold-faint flex items-center justify-center text-xs hover:bg-[#2d0816]"
+                        aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.threads.com/@the.astroalchemist" target="_blank" rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-[#18060f] border border-gold-faint flex items-center justify-center text-xs hover:bg-[#2d0816]"
+                        aria-label="Threads">
+                        <i class="fa-brands fa-threads"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Updated Footer Bottom -->
+        <div
+            class="max-w-7xl mx-auto border-t border-gold-faint/30 pt-6 flex justify-center items-center text-[11px] text-gold-muted">
+            <p class="font-bold text-center">© 2026 Pratik Kanpurwar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- ================= 10. ASTROBOT FLOATING POPUP ICON ================= -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end group">
+
+        <!-- Hover Message Pop-up -->
+        <div
+            class="opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-3 transition-all duration-300 ease-out pointer-events-none group-hover:pointer-events-auto mb-3 max-w-[220px] sm:max-w-xs">
+            <div
+                class="bg-[#18060f]/95 border border-[#e1c78e] text-[#f4e6b0] p-3 rounded-2xl shadow-2xl backdrop-blur-md relative text-xs">
+                <div class="flex items-center gap-2 font-semibold text-amber-300 mb-1">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>AstroBot Online ✦</span>
+                </div>
+                <p class="text-[#e1c78e] text-[11px] leading-relaxed">
+                    Hi there! I'm AstroBot 🤖, your cosmic AI friend. How can I help you today?
+                </p>
+                <!-- Downward Arrow -->
+                <div
+                    class="absolute -bottom-1.5 right-5 w-3 h-3 bg-[#18060f] border-r border-b border-[#e1c78e] transform rotate-45">
+                </div>
+            </div>
+        </div>
+
+        <!-- Advanced Animated Robot Icon Button -->
+        <a href="astrobot.html" aria-label="AstroBot"
+            class="animate-bot-float animate-bot-glow relative w-14 h-14 rounded-full bg-gradient-to-br from-[#2d0816] via-[#430f23] to-[#16040a] border-2 border-[#e1c78e] flex items-center justify-center text-amber-300 text-2xl transition-all duration-300 group-hover:scale-110">
+            <i class="fa-solid fa-robot group-hover:rotate-12 transition-transform duration-300"></i>
+
+            <!-- Live Status Dot -->
+            <span
+                class="absolute top-0.5 right-0.5 w-3.5 h-3.5 bg-emerald-500 border-2 border-[#0b0306] rounded-full"></span>
+        </a>
+    </div>
+
+
+    <!-- ================= 6. JAVASCRIPT ================= -->
+    <script>
+        // Mobile Navigation Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // FAQ Toggle Accordion
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('.faq-icon');
+
+            answer.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Search Filter for FAQs
+        function filterFaqs() {
+            const input = document.getElementById('faqSearch').value.toLowerCase();
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const text = item.innerText.toLowerCase();
+                if (text.includes(input)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

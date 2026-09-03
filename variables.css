@@ -1,0 +1,251 @@
+/* ===========================================================
+   VARIABLES.CSS
+   Premium Portfolio Website Design System
+   Author : Kaushal Gumphalwar
+   =========================================================== */
+
+:root {
+
+    /* =======================================================
+       COLOR PALETTE
+       ======================================================= */
+
+    /* Background Colors */
+    --color-bg-primary: #0B0F19;
+    --color-bg-secondary: #111827;
+    --color-bg-tertiary: #1A2234;
+
+    /* Glassmorphism */
+    --color-glass-bg: rgba(255, 255, 255, 0.05);
+    --color-glass-border: rgba(255, 255, 255, 0.08);
+
+    /* Brand Colors */
+    --color-primary: #00E5FF;
+    --color-secondary: #7C4DFF;
+
+    /* Gradient */
+    --gradient-primary: linear-gradient(
+        135deg,
+        #00E5FF 0%,
+        #7C4DFF 100%
+    );
+
+    /* Text Colors */
+    --color-heading: #FFFFFF;
+    --color-text: #C9D1D9;
+    --color-text-light: #94A3B8;
+
+    /* Border */
+    --color-border: rgba(255,255,255,0.08);
+
+    /* Status Colors */
+    --color-success: #22C55E;
+    --color-warning: #FACC15;
+    --color-danger: #EF4444;
+    --color-info: #3B82F6;
+
+
+
+    /* =======================================================
+       TYPOGRAPHY
+       ======================================================= */
+
+    --font-heading: "Space Grotesk", sans-serif;
+    --font-body: "Inter", sans-serif;
+
+    /* Font Weights */
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+
+
+    /* =======================================================
+       FONT SIZES
+       ======================================================= */
+
+    --fs-display: 4rem;        /* 64px */
+    --fs-h1: 3rem;             /* 48px */
+    --fs-h2: 2.25rem;          /* 36px */
+    --fs-h3: 1.75rem;          /* 28px */
+    --fs-h4: 1.5rem;           /* 24px */
+
+    --fs-body-lg: 1.125rem;    /* 18px */
+    --fs-body: 1rem;           /* 16px */
+    --fs-small: 0.875rem;      /* 14px */
+
+    --line-height-heading: 1.2;
+    --line-height-body: 1.7;
+
+
+
+    /* =======================================================
+       SPACING SYSTEM
+       ======================================================= */
+
+    --space-xs: 0.5rem;        /* 8px */
+    --space-sm: 1rem;          /* 16px */
+    --space-md: 1.5rem;        /* 24px */
+    --space-lg: 2.5rem;        /* 40px */
+    --space-xl: 4rem;          /* 64px */
+    --space-2xl: 6rem;         /* 96px */
+    --space-3xl: 7.5rem;       /* 120px */
+
+
+
+    /* =======================================================
+       BORDER RADIUS
+       ======================================================= */
+
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 20px;
+    --radius-xl: 24px;
+    --radius-pill: 999px;
+
+
+
+    /* =======================================================
+       SHADOWS
+       ======================================================= */
+
+    --shadow-sm:
+        0 4px 10px rgba(0,0,0,0.15);
+
+    --shadow-md:
+        0 8px 25px rgba(0,0,0,0.25);
+
+    --shadow-lg:
+        0 20px 50px rgba(0,0,0,0.35);
+
+    --shadow-glow:
+        0 0 25px rgba(0,229,255,0.25);
+
+
+
+    /* =======================================================
+       GLASS EFFECT
+       ======================================================= */
+
+    --glass-blur: blur(20px);
+    --glass-opacity: rgba(255,255,255,0.05);
+
+
+
+    /* =======================================================
+       TRANSITIONS
+       ======================================================= */
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.35s ease;
+    --transition-slow: 0.6s ease;
+
+
+
+    /* =======================================================
+       LAYOUT
+       ======================================================= */
+
+    --container-width: 1280px;
+
+    --navbar-height: 80px;
+
+    --section-padding:
+        120px 0;
+
+
+
+    /* =======================================================
+       BUTTONS
+       ======================================================= */
+
+    --button-padding-y: 14px;
+    --button-padding-x: 28px;
+
+    --button-font-size: 1rem;
+
+    --button-radius: 16px;
+
+
+
+    /* =======================================================
+       CARDS
+       ======================================================= */
+
+    --card-padding: 32px;
+    --card-radius: 20px;
+    --card-border: 1px solid rgba(255,255,255,0.08);
+
+
+
+    /* =======================================================
+       IMAGES
+       ======================================================= */
+
+    --image-radius: 24px;
+
+
+
+    /* =======================================================
+       ICONS
+       ======================================================= */
+
+    --icon-size-sm: 20px;
+    --icon-size-md: 28px;
+    --icon-size-lg: 36px;
+
+
+
+    /* =======================================================
+       Z-INDEX
+       ======================================================= */
+
+    --z-background: -1;
+    --z-default: 1;
+    --z-navbar: 1000;
+    --z-dropdown: 1100;
+    --z-overlay: 1200;
+    --z-modal: 1300;
+    --z-loader: 9999;
+
+
+
+    /* =======================================================
+       SCROLLBAR
+       ======================================================= */
+
+    --scrollbar-width: 10px;
+
+
+
+    /* =======================================================
+       SELECTION
+       ======================================================= */
+
+    --selection-bg: #00E5FF;
+    --selection-text: #0B0F19;
+
+
+
+    /* =======================================================
+       RESPONSIVE BREAKPOINTS
+       (Documentation Only)
+       ======================================================= */
+
+    /*
+        Mobile  : 0px - 767px
+        Tablet  : 768px - 1023px
+        Laptop  : 1024px - 1439px
+        Desktop : 1440px+
+    */
+
+
+    /* Future (Optional) */
+    --navbar-blur: 20px;
+    --glass-border-hover: rgba(255,255,255,0.12);
+    --card-hover-scale: 1.02;
+
+}
+

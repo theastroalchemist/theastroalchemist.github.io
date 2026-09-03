@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-[#0b0306]">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroBot-v1.0 | Robotic Astrology Assistant - Pratik Kanpurwar</title>
+    <meta name="description"
+        content="Interact with AstroBot-v1.0, your 24/7 AI Robot Assistant for Vedic Astrology queries.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Orbitron (Robot Tech Header) + Outfit (Text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Orbitron:wght@500;700;900&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        html,
+        body {
+            background-color: #0b0306 !important;
+            color: #e1c78e;
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .font-robot {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .font-serif-cinzel {
+            font-family: 'Cinzel', serif;
+        }
+
+        .cosmic-burgundy-bg {
+            background: radial-gradient(circle at 50% 0%, #2d0816 0%, #16040a 60%, #0b0306 100%) !important;
+            background-attachment: fixed !important;
+        }
+
+        .text-gold-bright {
+            color: #f4e6b0;
+        }
+
+        .text-gold-muted {
+            color: #bfa56f;
+        }
+
+        .border-gold-faint {
+            border-color: rgba(225, 199, 142, 0.22);
+        }
+
+        /* Metallic Robot Panel Styling */
+        .robot-glass-card {
+            background: linear-gradient(135deg, rgba(28, 9, 20, 0.95), rgba(12, 3, 8, 0.98));
+            backdrop-filter: blur(16px);
+            border: 2px solid #00f0ff;
+            box-shadow: 0 0 25px rgba(0, 240, 255, 0.15), inset 0 0 15px rgba(212, 175, 55, 0.1);
+        }
+
+        .robot-header {
+            background: linear-gradient(90deg, #180510 0%, #2a0a1a 50%, #180510 100%);
+            border-bottom: 2px solid rgba(0, 240, 255, 0.4);
+        }
+
+        .input-robot {
+            background-color: rgba(8, 2, 5, 0.9) !important;
+            border: 1px solid #00f0ff;
+            color: #00f0ff !important;
+            font-family: 'Orbitron', monospace;
+        }
+
+        .input-robot:focus {
+            outline: none;
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+        }
+
+        /* Robotic Radar Scan Grid */
+        .grid-pattern {
+            background-image: linear-gradient(to right, rgba(0, 240, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 240, 255, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0b0306;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #00f0ff;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body class="grid-pattern cosmic-burgundy-bg min-h-screen flex flex-col justify-between">
+
+    <!-- ================= 1. NAVIGATION BAR ================= -->
+    <nav
+        class="fixed top-0 left-0 w-full z-50 bg-[#0b0306]/95 backdrop-blur-md border-b border-gold-faint px-4 sm:px-8 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html"
+                class="font-serif-cinzel text-lg sm:text-2xl font-bold tracking-widest text-gold-bright flex items-center gap-2">
+                <span class="text-amber-300 text-xl">✦</span> The Astro Alchemist
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden lg:flex items-center space-x-2.5 text-xs xl:text-sm font-medium">
+                <a href="index.html"
+                    class="px-4 py-2 rounded-xl bg-[#13040a]/60 border border-gold-faint/20 text-gold-muted hover:text-gold-bright hover:border-gold-bright/50 hover:bg-[#230814] hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] transition-all duration-300">
+                    Home
+                </a>
+
+                <a href="courses.html"
+                    class="px-4 py-2 rounded-xl bg-[#13040a]/60 border border-gold-faint/20 text-gold-muted hover:text-gold-bright hover:border-gold-bright/50 hover:bg-[#230814] hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] transition-all duration-300">
+                    Astrology Courses
+                </a>
+
+                <a href="gems.html"
+                    class="px-4 py-2 rounded-xl bg-[#13040a]/60 border border-gold-faint/20 text-gold-muted hover:text-gold-bright hover:border-gold-bright/50 hover:bg-[#230814] hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] transition-all duration-300">
+                    Gems
+                </a>
+
+                <a href="faqs.html"
+                    class="px-4 py-2 rounded-xl bg-[#13040a]/60 border border-gold-faint/20 text-gold-muted hover:text-gold-bright hover:border-gold-bright/50 hover:bg-[#230814] hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] transition-all duration-300">
+                    FAQs
+                </a>
+
+                <a href="contact.html"
+                    class="px-4 py-2 rounded-xl bg-[#13040a]/60 border border-gold-faint/20 text-gold-muted hover:text-gold-bright hover:border-gold-bright/50 hover:bg-[#230814] hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] transition-all duration-300">
+                    Contact Us
+                </a>
+
+                <!-- Active Page Card (AstroBot) -->
+                <a href="astrobot.html"
+                    class="px-4 py-2 rounded-xl bg-gradient-to-r from-[#2d0a18] to-[#1c050f] border border-gold-bright/70 text-gold-bright font-semibold shadow-[0_0_12px_rgba(212,175,55,0.3)] -translate-y-0.5 transition-all duration-300">
+                    AstroBot
+                </a>
+            </div>
+
+            <a href="index.html#consult"
+                class="hidden sm:inline-flex border border-gold-faint bg-[#2d0816]/80 text-gold-bright hover:bg-[#d4af37] hover:text-slate-950 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition">
+                Book Reading
+            </a>
+
+            <button id="menuBtn" class="lg:hidden text-gold-bright text-2xl focus:outline-none p-1"
+                aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu"
+            class="hidden lg:hidden flex-col bg-[#16040a] border-b border-gold-faint px-6 py-6 space-y-4 mt-3 rounded-b-2xl shadow-2xl">
+            <a href="index.html" class="text-gold-muted text-sm block">Home</a>
+            <a href="courses.html" class="text-gold-muted text-sm block">Astrology Courses</a>
+            <a href="gems.html" class="text-gold-muted text-sm block">Gems</a>
+            <a href="faqs.html" class="text-gold-muted text-sm block">FAQs</a>
+            <a href="contact.html" class="text-gold-muted text-sm block">Contact Us</a>
+            <a href="astrobot.html" class="text-cyan-400 font-robot font-semibold text-sm block">🤖 AstroBot</a>
+        </div>
+    </nav>
+
+
+    <!-- ================= 2. ROBOT HEADER ================= -->
+    <section class="pt-32 sm:pt-36 pb-4 px-4 max-w-4xl mx-auto text-center">
+        <div
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-500/40 bg-cyan-950/30 mb-3 text-[11px] font-robot text-cyan-300 tracking-widest uppercase">
+            <i class="fa-solid fa-microchip text-xs"></i> AI ROBOTIC ASTROLOGICAL UNIT v1.0
+        </div>
+        <h1 class="font-robot text-2xl sm:text-4xl font-bold text-white tracking-wider mb-2">
+            ASTROBOT-3000 <span class="text-cyan-400 font-normal">🤖</span>
+        </h1>
+        <p class="text-gold-muted text-xs sm:text-sm max-w-xl mx-auto font-light leading-relaxed">
+            *BEEP BOOP* Cybernetic assistant online! Query me regarding courses, gemstone remedies, or booking
+            consultations with Pratik Kanpurwar.
+        </p>
+    </section>
+
+
+    <!-- ================= 3. ROBOT CHAT INTERFACE ================= -->
+    <section class="pb-16 px-4 sm:px-6 max-w-4xl mx-auto w-full">
+        <div class="robot-glass-card rounded-3xl overflow-hidden flex flex-col h-[620px]">
+
+            <!-- Robot Header Bar -->
+            <div class="robot-header px-6 py-4 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <!-- Glowing Robot Face Avatar -->
+                    <div
+                        class="relative w-11 h-11 rounded-2xl bg-[#0b0306] border-2 border-cyan-400 flex items-center justify-center text-cyan-400 text-xl shadow-[0_0_15px_rgba(0,240,255,0.4)]">
+                        <i class="fa-solid fa-robot"></i>
+                        <span class="absolute -top-1 -right-1 w-3 h-3 bg-cyan-400 rounded-full animate-ping"></span>
+                    </div>
+                    <div>
+                        <h3 class="font-robot text-sm sm:text-base text-cyan-300 font-bold tracking-wide">AstroBot-3000
+                        </h3>
+                        <p class="font-robot text-[10px] text-emerald-400 flex items-center gap-1.5 tracking-wider">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> SYSTEM: ONLINE
+                            [100%]
+                        </p>
+                    </div>
+                </div>
+                <button onclick="clearChat()"
+                    class="font-robot text-[11px] text-cyan-400 hover:text-white border border-cyan-500/40 px-3 py-1.5 rounded-xl bg-cyan-950/20 transition">
+                    <i class="fa-solid fa-arrows-rotate mr-1"></i> REBOOT
+                </button>
+            </div>
+
+            <!-- Chat Messages Window -->
+            <div id="chatContainer" class="flex-1 p-4 sm:p-6 overflow-y-auto space-y-4 text-xs sm:text-sm">
+                <!-- Welcome Bot Message -->
+                <div class="flex items-start gap-3">
+                    <div
+                        class="w-9 h-9 rounded-xl bg-[#16040a] border border-cyan-400/60 flex shrink-0 items-center justify-center text-cyan-400 text-sm shadow-[0_0_8px_rgba(0,240,255,0.2)]">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div
+                        class="bg-[#190610] border border-cyan-500/30 rounded-2xl p-4 max-w-[85%] text-gold-faint leading-relaxed shadow-lg">
+                        <span class="font-robot text-[11px] text-cyan-300 block mb-1">🤖 [ASTROBOT SYSTEM]:</span>
+                        *BEEP BOOP!* Greetings, Human! I am <strong>AstroBot-3000</strong>. My processors are ready to
+                        assist you with:
+                        <ul class="list-disc list-inside mt-2 space-y-1 text-gold-muted text-xs">
+                            <li>Consultation booking procedures</li>
+                            <li>Vedic Astrology Course curriculum</li>
+                            <li>Gemstone & Remedy guidelines</li>
+                        </ul>
+                        State your query, Human!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Robotic Quick Prompt Chips -->
+            <div
+                class="px-4 py-2.5 bg-[#0b0306] border-t border-cyan-500/20 flex gap-2 overflow-x-auto text-[11px] font-robot">
+                <button onclick="sendQuickPrompt('How do I book a consultation?')"
+                    class="whitespace-nowrap bg-[#1d0612] border border-cyan-500/40 text-cyan-300 px-3 py-1.5 rounded-xl hover:bg-cyan-950/50 hover:text-white transition">
+                    ⚡ Book Consultation
+                </button>
+                <button onclick="sendQuickPrompt('Tell me about Astrology Courses')"
+                    class="whitespace-nowrap bg-[#1d0612] border border-cyan-500/40 text-cyan-300 px-3 py-1.5 rounded-xl hover:bg-cyan-950/50 hover:text-white transition">
+                    💾 Course Details
+                </button>
+                <button onclick="sendQuickPrompt('What gemstones are recommended?')"
+                    class="whitespace-nowrap bg-[#1d0612] border border-cyan-500/40 text-cyan-300 px-3 py-1.5 rounded-xl hover:bg-cyan-950/50 hover:text-white transition">
+                    💎 Gems & Remedies
+                </button>
+            </div>
+
+            <!-- Robotic Input Bar -->
+            <form id="chatForm" onsubmit="handleUserSubmit(event)"
+                class="p-2.5 sm:p-4 bg-[#14040d] border-t border-cyan-500/30 flex gap-2 sm:gap-3">
+                <input type="text" id="userInput" placeholder="> Input human question..." autocomplete="off"
+                    class="flex-1 min-w-0 input-robot rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm placeholder:text-cyan-700">
+                <button type="submit"
+                    class="shrink-0 whitespace-nowrap bg-gradient-to-r from-cyan-500 to-blue-600 text-black px-3.5 sm:px-6 rounded-xl font-robot font-bold text-xs sm:text-sm tracking-wider hover:brightness-125 transition shadow-[0_0_15px_rgba(0,240,255,0.4)] flex items-center justify-center gap-1.5 sm:gap-2">
+                    <span>EXECUTE</span> <i class="fa-solid fa-terminal text-xs"></i>
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- ================= 4. FOOTER ================= -->
+    <!-- ================= 9. PREMIUM FOOTER ================= -->
+    <footer class="bg-[#080204] border-t border-gold-faint pt-12 pb-8 px-4 sm:px-8 mt-16">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+
+            <!-- Col 1: About -->
+            <div class="space-y-3">
+                <a href="index.html"
+                    class="font-serif-cinzel text-lg font-bold text-gold-bright flex items-center gap-2">
+                    <span class="text-amber-300">✦</span> PRATIK KANPURWAR
+                </a>
+                <p class="text-gold-muted text-xs leading-relaxed">
+                    Vedic Astrology, Horoscope Analysis, and Sacred Life Guidance. Standing beside you as a true
+                    well-wisher on life's journey.
+                </p>
+                <div class="text-amber-300/80 text-xs italic font-bold pt-1">
+                    "लोकाः समस्ताः सुखिनो भवन्तु"
+                </div>
+            </div>
+
+            <!-- Col 2: Site Navigation -->
+            <div>
+                <h4 class="font-serif-cinzel text-gold-bright font-bold text-sm mb-3 uppercase tracking-wider">Quick
+                    Links</h4>
+                <ul class="space-y-2 text-xs text-gold-muted">
+                    <li><a href="index.html" class="hover:text-gold-bright transition">Home Page</a></li>
+                    <li><a href="courses.html" class="hover:text-gold-bright transition">Astrology Courses</a></li>
+                    <li><a href="gems.html" class="hover:text-gold-bright transition">Gems</a></li>
+                    <li><a href="faqs.html" class="hover:text-gold-bright transition">Frequently Asked Questions</a>
+                    </li>
+                    <li><a href="contact.html" class="hover:text-gold-bright transition">Contact Us</a></li>
+                    <li><a href="astrobot.html" class="hover:text-gold-bright transition">AstroBot</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Key Offerings -->
+            <div>
+                <h4 class="font-serif-cinzel text-gold-bright font-bold text-sm mb-3 uppercase tracking-wider">Our
+                    Services</h4>
+                <ul class="space-y-2 text-xs text-gold-muted">
+                    <li><a href="#consult" class="hover:text-gold-bright transition">Full Kundli Analysis</a></li>
+                    <li><a href="#consult" class="hover:text-gold-bright transition">Career & Business Guidance</a></li>
+                    <li><a href="#consult" class="hover:text-gold-bright transition">Marriage & Matchmaking</a></li>
+                    <li><a href="#consult" class="hover:text-gold-bright transition">Cesarean Birth Muhurt</a></li>
+                    <li><a href="#consult" class="hover:text-gold-bright transition">Vastu & Gemstones</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Reach Out & Social Links -->
+            <div class="space-y-3">
+                <h4 class="font-serif-cinzel text-gold-bright font-bold text-sm mb-3 uppercase tracking-wider">Get in
+                    Touch</h4>
+                <p class="text-gold-muted text-xs flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-amber-400"></i> +91 8262071166 / 8208037091
+                </p>
+                <p class="text-gold-muted text-xs flex items-center gap-2">
+                    <i class="fa-solid fa-envelope text-amber-400"></i> Email: consult.pratikkanpurwar@gmail.com
+                </p>
+                <p class="text-gold-muted text-xs flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-amber-400"></i> Pune, Maharashtra, India
+                </p>
+
+                <!-- Social Media Links -->
+                <div class="pt-2 flex gap-2.5 text-gold-bright flex-wrap">
+                    <a href="https://wa.me/918262071166" target="_blank" rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-[#18060f] border border-gold-faint flex items-center justify-center text-xs hover:bg-[#2d0816]"
+                        aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://youtube.com/@pratikkanpurwar4057?si=vgxUoqk-8dP_anSP" target="_blank"
+                        rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-[#18060f] border border-gold-faint flex items-center justify-center text-xs hover:bg-[#2d0816]"
+                        aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/the.astroalchemist?utm_source=qr&igsh=MWl6d2F3aGV3MzF3MA==&igsi=MWl6d2F3aGV3MzF3MA=="
+                        target="_blank" rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-[#18060f] border border-gold-faint flex items-center justify-center text-xs hover:bg-[#2d0816]"
+                        aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.threads.com/@the.astroalchemist" target="_blank" rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-[#18060f] border border-gold-faint flex items-center justify-center text-xs hover:bg-[#2d0816]"
+                        aria-label="Threads">
+                        <i class="fa-brands fa-threads"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto border-t border-gold-faint/30 pt-6 flex justify-center items-center text-[11px] text-gold-muted">
+            <p class="font-bold text-center">© 2026 Pratik Kanpurwar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- ================= 5. JAVASCRIPT ROBOT LOGIC ================= -->
+    <script>
+        // Mobile Navigation Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        if (menuBtn) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                menuIcon.classList.toggle('fa-bars');
+                menuIcon.classList.toggle('fa-xmark');
+            });
+        }
+
+        const chatContainer = document.getElementById('chatContainer');
+        const userInput = document.getElementById('userInput');
+
+        function appendMessage(sender, text) {
+            const isUser = sender === 'user';
+            const wrapperDiv = document.createElement('div');
+            wrapperDiv.className = `flex items-start gap-3 ${isUser ? 'flex-row-reverse' : ''}`;
+
+            const avatar = document.createElement('div');
+            avatar.className = `w-9 h-9 rounded-xl border flex shrink-0 items-center justify-center text-sm ${isUser
+                ? 'bg-[#3a0a1f] border-gold-faint text-gold-bright'
+                : 'bg-[#16040a] border-cyan-400 text-cyan-400 shadow-[0_0_8px_rgba(0,240,255,0.3)]'
+                }`;
+            avatar.innerHTML = isUser ? '<i class="fa-solid fa-user"></i>' : '<i class="fa-solid fa-robot"></i>';
+
+            const bubble = document.createElement('div');
+            bubble.className = `rounded-2xl p-4 max-w-[85%] leading-relaxed shadow-md text-xs sm:text-sm ${isUser
+                ? 'bg-[#320b1b] text-gold-bright border border-gold-faint/50 font-sans'
+                : 'bg-[#190610] text-gold-faint border border-cyan-500/30'
+                }`;
+
+            const robotPrefix = isUser ? '' : '<span class="font-robot text-[11px] text-cyan-300 block mb-1">🤖 [ASTROBOT SYSTEM]:</span> ';
+            bubble.innerHTML = robotPrefix + text;
+
+            wrapperDiv.appendChild(avatar);
+            wrapperDiv.appendChild(bubble);
+            chatContainer.appendChild(wrapperDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        function getBotResponse(query) {
+            const q = query.toLowerCase();
+
+            if (q.includes('book') || q.includes('consultation') || q.includes('appointment')) {
+                return "*BZZZT!* To schedule a reading with Pratik Kanpurwar, proceed to the <a href='index.html#consult' class='text-cyan-300 underline font-bold font-robot'>[CONSULTATION FORM]</a>, submit birth coordinates, and initiate WhatsApp contact!";
+            } else if (q.includes('course') || q.includes('learn') || q.includes('study')) {
+                return "*PROCESSING ACADEMIC DATA...* Explore structured modules on our <a href='courses.html' class='text-cyan-300 underline font-bold font-robot'>[ASTROLOGY COURSES PAGE]</a> to acquire authentic Vedic knowledge!";
+            } else if (q.includes('gem') || q.includes('stone') || q.includes('remedy') || q.includes('remedies')) {
+                return "*ANALYZING REMEDY DATA...* Gemstones alter planetary wavelengths. Detailed analysis is available on our <a href='gems.html' class='text-cyan-300 underline font-bold font-robot'>[GEMS & REMEDIES PAGE]</a>.";
+            } else if (q.includes('pratik') || q.includes('who')) {
+                return "Pratik Kanpurwar is the primary Vedic Practitioner behind The Astro Alchemist, offering traditional planetary guidance.";
+            } else {
+                return "*BEEP!* Query logged! For chart-specific predictions, human expertise is required. Please submit your birth details via our <a href='index.html#consult' class='text-cyan-300 underline font-bold font-robot'>[CONSULTATION SECTION]</a>.";
+            }
+        }
+
+        function handleUserSubmit(e) {
+            e.preventDefault();
+            const text = userInput.value.trim();
+            if (!text) return;
+
+            appendMessage('user', text);
+            userInput.value = '';
+
+            // Simulated Robot Processing Delay
+            setTimeout(() => {
+                const reply = getBotResponse(text);
+                appendMessage('bot', reply);
+            }, 500);
+        }
+
+        function sendQuickPrompt(promptText) {
+            userInput.value = promptText;
+            document.getElementById('chatForm').dispatchEvent(new Event('submit'));
+        }
+
+        function clearChat() {
+            chatContainer.innerHTML = `
+                <div class="flex items-start gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-[#16040a] border border-cyan-400 flex shrink-0 items-center justify-center text-cyan-400 text-sm shadow-[0_0_8px_rgba(0,240,255,0.3)]">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div class="bg-[#190610] border border-cyan-500/30 rounded-2xl p-4 max-w-[85%] text-gold-faint leading-relaxed shadow-lg">
+                        <span class="font-robot text-[11px] text-cyan-300 block mb-1">🤖 [SYSTEM REBOOTED]:</span>
+                        *BEEP BOOP!* Memory cleared. System online! How can AstroBot help you now?
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+
+</html>

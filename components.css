@@ -1,0 +1,1223 @@
+/* ===========================================================
+   COMPONENTS.CSS
+   Reusable UI Components
+   Part 1
+   Author : Kaushalya Gumphalwar
+   =========================================================== */
+
+
+/* ===========================================================
+   PRIMARY BUTTON
+   =========================================================== */
+
+.btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+
+    padding:14px 32px;
+
+    border:none;
+    border-radius:var(--radius-md);
+
+    font-family:var(--font-body);
+    font-size:var(--button-font-size);
+    font-weight:var(--font-semibold);
+
+    cursor:pointer;
+
+    transition:all var(--transition-normal);
+
+}
+
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+.btn:active{
+
+    transform:scale(0.98);
+
+}
+
+
+/* ===========================================================
+   PRIMARY BUTTON
+   =========================================================== */
+
+.btn-primary{
+
+    background:var(--gradient-primary);
+
+    color:#ffffff;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+
+.btn-primary:hover{
+
+    box-shadow:var(--shadow-glow);
+
+}
+
+
+/* ===========================================================
+   SECONDARY BUTTON
+   =========================================================== */
+
+.btn-secondary{
+
+    background:transparent;
+
+    color:var(--color-heading);
+
+    border:1px solid var(--color-border);
+
+}
+
+
+.btn-secondary:hover{
+
+    background:rgba(255,255,255,0.05);
+
+    border-color:var(--color-primary);
+
+}
+
+
+/* ===========================================================
+   OUTLINE BUTTON
+   =========================================================== */
+
+.btn-outline{
+
+    background:transparent;
+
+    color:var(--color-primary);
+
+    border:2px solid var(--color-primary);
+
+}
+
+
+.btn-outline:hover{
+
+    background:var(--color-primary);
+
+    color:var(--color-bg-primary);
+
+}
+
+
+/* ===========================================================
+   ICON BUTTON
+   =========================================================== */
+
+.btn-icon{
+
+    width:52px;
+    height:52px;
+
+    padding:0;
+
+    border-radius:50%;
+
+}
+
+
+.btn-icon i{
+
+    font-size:22px;
+
+}
+
+
+/* ===========================================================
+   SOCIAL BUTTON
+   =========================================================== */
+
+.social-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:50%;
+
+    background:var(--color-glass-bg);
+
+    border:1px solid var(--color-border);
+
+    backdrop-filter:var(--glass-blur);
+
+    transition:all var(--transition-normal);
+
+}
+
+
+.social-btn:hover{
+
+    background:var(--gradient-primary);
+
+    color:#ffffff;
+
+    transform:translateY(-5px);
+
+    box-shadow:var(--shadow-glow);
+
+}
+
+
+.social-btn img{
+
+    width:24px;
+
+    height:24px;
+
+}
+
+
+/* ===========================================================
+   CHIP
+   =========================================================== */
+
+.chip{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,0.06);
+
+    color:var(--color-text);
+
+    font-size:var(--fs-small);
+
+    font-weight:var(--font-medium);
+
+    border:1px solid var(--color-border);
+
+}
+
+
+/* ===========================================================
+   TAG
+   =========================================================== */
+
+.tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    background:rgba(124,77,255,0.12);
+
+    color:var(--color-secondary);
+
+    font-size:0.85rem;
+
+    font-weight:var(--font-medium);
+
+}
+
+
+/* ===========================================================
+   DIVIDER
+   =========================================================== */
+
+.component-divider{
+
+    width:100%;
+
+    height:1px;
+
+    background:var(--color-border);
+
+}
+
+
+/* ===========================================================
+   SECTION LABEL
+   =========================================================== */
+
+.section-label{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:18px;
+
+    color:var(--color-primary);
+
+    font-size:var(--fs-small);
+
+    font-weight:var(--font-semibold);
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+
+.section-label::before{
+
+    content:"";
+
+    width:36px;
+
+    height:2px;
+
+    background:var(--gradient-primary);
+
+}
+
+
+/* ===========================================================
+   LINK BUTTON
+   =========================================================== */
+
+.link-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:var(--color-primary);
+
+    font-weight:var(--font-semibold);
+
+    transition:all var(--transition-normal);
+
+}
+
+
+.link-btn:hover{
+
+    gap:14px;
+
+}
+
+
+/* ===========================================================
+   END OF PART 1
+   =========================================================== */
+
+
+/* ===========================================================
+   COMPONENTS.CSS
+   Reusable UI Components
+   Part 2
+   Author : Kaushalya Gumphalwar
+   =========================================================== */
+
+
+/* ===========================================================
+   BASE CARD
+   =========================================================== */
+
+.card{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:var(--card-padding);
+
+    background:var(--color-glass-bg);
+
+    border:1px solid var(--color-border);
+
+    border-radius:var(--card-radius);
+
+    backdrop-filter:var(--glass-blur);
+    -webkit-backdrop-filter:var(--glass-blur);
+
+    transition:all var(--transition-normal);
+
+    overflow:hidden;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(0,229,255,0.25);
+
+    box-shadow:var(--shadow-glow);
+
+}
+
+
+/* ===========================================================
+   CARD GLOW
+   =========================================================== */
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(0,229,255,.08),
+        rgba(124,77,255,.08)
+    );
+
+    opacity:0;
+
+    transition:opacity var(--transition-normal);
+
+    pointer-events:none;
+
+}
+
+
+.card:hover::before{
+
+    opacity:1;
+
+}
+
+
+/* ===========================================================
+   CARD HEADER
+   =========================================================== */
+
+.card-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    margin-bottom:var(--space-md);
+
+}
+
+
+/* ===========================================================
+   CARD TITLE
+   =========================================================== */
+
+.card-title{
+
+    color:var(--color-heading);
+
+    font-size:var(--fs-h4);
+
+    font-weight:var(--font-bold);
+
+    margin-bottom:12px;
+
+}
+
+
+/* ===========================================================
+   CARD DESCRIPTION
+   =========================================================== */
+
+.card-description{
+
+    color:var(--color-text-light);
+
+    line-height:1.8;
+
+    margin-bottom:var(--space-lg);
+
+}
+
+
+/* ===========================================================
+   CARD FOOTER
+   =========================================================== */
+
+.card-footer{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    margin-top:auto;
+
+}
+
+
+/* ===========================================================
+   PROJECT CARD
+   =========================================================== */
+
+.project-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+}
+
+
+.project-image{
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    overflow:hidden;
+
+    border-radius:var(--radius-lg);
+
+    margin-bottom:24px;
+
+}
+
+
+.project-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:transform .5s ease;
+
+}
+
+
+.project-card:hover .project-image img{
+
+    transform:scale(1.08);
+
+}
+
+
+.project-tech{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+
+/* ===========================================================
+   SKILL CARD
+   =========================================================== */
+
+.skill-card{
+
+    text-align:center;
+
+    align-items:center;
+
+}
+
+
+.skill-icon{
+
+    width:72px;
+
+    height:72px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:24px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid var(--color-border);
+
+}
+
+
+.skill-icon img{
+
+    width:38px;
+
+    height:38px;
+
+}
+
+
+.skill-name{
+
+    color:var(--color-heading);
+
+    font-size:1.15rem;
+
+    font-weight:var(--font-semibold);
+
+    margin-bottom:10px;
+
+}
+
+
+.skill-description{
+
+    color:var(--color-text-light);
+
+    line-height:1.7;
+
+}
+
+
+/* ===========================================================
+   CONTACT CARD
+   =========================================================== */
+
+.contact-card{
+
+    text-align:center;
+
+    align-items:center;
+
+}
+
+
+.contact-icon{
+
+    width:70px;
+
+    height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:22px;
+
+    border-radius:50%;
+
+    background:var(--gradient-primary);
+
+    color:#ffffff;
+
+    font-size:30px;
+
+}
+
+
+.contact-title{
+
+    color:var(--color-heading);
+
+    font-size:1.2rem;
+
+    font-weight:var(--font-semibold);
+
+    margin-bottom:10px;
+
+}
+
+
+.contact-text{
+
+    color:var(--color-text-light);
+
+    word-break:break-word;
+
+}
+
+
+/* ===========================================================
+   TIMELINE CARD
+   =========================================================== */
+
+.timeline-card{
+
+    position:relative;
+
+    padding-left:36px;
+
+}
+
+
+.timeline-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:8px;
+
+    width:14px;
+
+    height:14px;
+
+    border-radius:50%;
+
+    background:var(--color-primary);
+
+    box-shadow:0 0 20px rgba(0,229,255,.5);
+
+}
+
+
+.timeline-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:6px;
+
+    top:24px;
+
+    width:2px;
+
+    height:calc(100% - 24px);
+
+    background:rgba(255,255,255,.08);
+
+}
+
+
+/* ===========================================================
+   FEATURE CARD
+   =========================================================== */
+
+.feature-card{
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:flex-start;
+
+}
+
+
+.feature-icon{
+
+    flex-shrink:0;
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:18px;
+
+    background:rgba(0,229,255,.08);
+
+    color:var(--color-primary);
+
+    font-size:28px;
+
+}
+
+
+.feature-content h3{
+
+    margin-bottom:10px;
+
+}
+
+
+.feature-content p{
+
+    color:var(--color-text-light);
+
+}
+
+
+/* ===========================================================
+   STATS CARD
+   =========================================================== */
+
+.stats-card{
+
+    text-align:center;
+
+}
+
+
+.stats-number{
+
+    font-size:3rem;
+
+    font-weight:700;
+
+    color:var(--color-primary);
+
+    margin-bottom:10px;
+
+}
+
+
+.stats-label{
+
+    color:var(--color-text-light);
+
+}
+
+
+/* ===========================================================
+   END OF PART 2
+   =========================================================== */
+
+
+/* ===========================================================
+   COMPONENTS.CSS
+   Reusable UI Components
+   Part 3
+   Author : Kaushalya Gumphalwar
+   =========================================================== */
+
+
+/* ===========================================================
+   FORM GROUP
+   =========================================================== */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    margin-bottom:24px;
+
+}
+
+
+.form-label{
+
+    color:var(--color-heading);
+
+    font-size:0.95rem;
+
+    font-weight:var(--font-medium);
+
+}
+
+
+/* ===========================================================
+   INPUT FIELD
+   =========================================================== */
+
+.input-field{
+
+    width:100%;
+
+    padding:16px 20px;
+
+    background:rgba(255,255,255,0.04);
+
+    color:var(--color-text);
+
+    border:1px solid var(--color-border);
+
+    border-radius:var(--radius-md);
+
+    font-family:var(--font-body);
+
+    font-size:1rem;
+
+    transition:all var(--transition-normal);
+
+}
+
+
+.input-field::placeholder{
+
+    color:var(--color-text-light);
+
+}
+
+
+.input-field:focus{
+
+    border-color:var(--color-primary);
+
+    box-shadow:0 0 0 4px rgba(0,229,255,0.12);
+
+}
+
+
+/* ===========================================================
+   TEXTAREA
+   =========================================================== */
+
+.textarea{
+
+    resize:vertical;
+
+    min-height:180px;
+
+}
+
+
+/* ===========================================================
+   FORM MESSAGE
+   =========================================================== */
+
+.form-message{
+
+    font-size:.9rem;
+
+    margin-top:8px;
+
+}
+
+
+.form-success{
+
+    color:#4CAF50;
+
+}
+
+
+.form-error{
+
+    color:#FF5A5A;
+
+}
+
+
+/* ===========================================================
+   LOADER
+   =========================================================== */
+
+.loader{
+
+    width:52px;
+
+    height:52px;
+
+    border:4px solid rgba(255,255,255,.08);
+
+    border-top-color:var(--color-primary);
+
+    border-radius:50%;
+
+    animation:loader-spin 1s linear infinite;
+
+}
+
+
+@keyframes loader-spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+
+/* ===========================================================
+   SCROLL INDICATOR
+   =========================================================== */
+
+.scroll-indicator{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:var(--color-text-light);
+
+    font-size:.9rem;
+
+}
+
+
+.scroll-mouse{
+
+    width:28px;
+
+    height:48px;
+
+    border:2px solid var(--color-border);
+
+    border-radius:24px;
+
+    position:relative;
+
+}
+
+
+.scroll-mouse::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:8px;
+
+    width:5px;
+
+    height:10px;
+
+    border-radius:999px;
+
+    background:var(--color-primary);
+
+    transform:translateX(-50%);
+
+    animation:scroll-wheel 1.8s infinite;
+
+}
+
+
+@keyframes scroll-wheel{
+
+    0%{
+
+        opacity:0;
+
+        transform:translate(-50%,0);
+
+    }
+
+    40%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:translate(-50%,16px);
+
+    }
+
+}
+
+
+/* ===========================================================
+   SCROLL TO TOP BUTTON
+   =========================================================== */
+
+.scroll-top{
+
+    position:fixed;
+
+    right:32px;
+
+    bottom:32px;
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--gradient-primary);
+
+    color:#ffffff;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(20px);
+
+    transition:all var(--transition-normal);
+
+    z-index:999;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+
+.scroll-top.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+
+.scroll-top:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-glow);
+
+}
+
+
+/* ===========================================================
+   TOOLTIP
+   =========================================================== */
+
+.tooltip{
+
+    position:relative;
+
+    cursor:pointer;
+
+}
+
+
+.tooltip::after{
+
+    content:attr(data-tooltip);
+
+    position:absolute;
+
+    bottom:120%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    padding:8px 12px;
+
+    background:var(--color-bg-secondary);
+
+    color:var(--color-text);
+
+    font-size:.8rem;
+
+    white-space:nowrap;
+
+    border-radius:var(--radius-sm);
+
+    border:1px solid var(--color-border);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:all .3s ease;
+
+}
+
+
+.tooltip:hover::after{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+/* ===========================================================
+   EMPTY STATE
+   =========================================================== */
+
+.empty-state{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:20px;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+
+.empty-state h3{
+
+    color:var(--color-heading);
+
+}
+
+
+.empty-state p{
+
+    color:var(--color-text-light);
+
+}
+
+
+/* ===========================================================
+   END OF COMPONENTS.CSS
+   =========================================================== */
